@@ -1,25 +1,33 @@
 import logo from './logo.svg';
 import './App.css';
+import axios from 'axios';
+import { urlWeather } from './endpoints';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(()=>{
+    axios.get(urlWeather).then((response)=>{
+      console.log(response.data);}
+    )
+  },[])  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+<p>hi</p>
+    </>
   );
 }
 
 export default App;
+// import { useEffect } from 'react';
+// import './App.css';
+// import {urlWeather} from './endpoints';
+// import axios,{AxiosResponse} from 'axios';
+
+// function App() {
+
+//   useEffect(() => {
+//     axios.get(urlWeather).then((response: AxiosResponse<any>) => {
+//       // axios.get(urlWeather).then((response) => {
+//       console.log(response.data);
+//     })
+//   },[])

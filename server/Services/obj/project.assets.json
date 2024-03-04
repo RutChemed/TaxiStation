@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "DBAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/DBAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DBAccess.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "DBAccess/1.0.0": {
+      "type": "project",
+      "path": "../DBAccess/DBAccess.csproj",
+      "msbuildProject": "../DBAccess/DBAccess.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "DBAccess >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\user\\.nuget\\packages\\": {},
@@ -39,7 +58,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DBAccess.csproj": {
+              "projectPath": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DBAccess.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
