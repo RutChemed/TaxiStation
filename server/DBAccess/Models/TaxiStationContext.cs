@@ -21,17 +21,19 @@ public partial class TaxiStationContext : DbContext
     {
         modelBuilder.Entity<DriverTemporaryLocation>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__DriverTe__3214EC07721FA526");
+            entity.HasKey(e => e.Id).HasName("PK__DriverTe__3214EC0736735BCF");
 
             entity.ToTable("DriverTemporaryLocation");
 
             entity.Property(e => e.EndTime).HasColumnType("datetime");
+            entity.Property(e => e.Latitudes).HasColumnType("decimal(8, 6)");
+            entity.Property(e => e.Longitudes).HasColumnType("decimal(9, 6)");
             entity.Property(e => e.StartTime).HasColumnType("datetime");
 
             entity.HasOne(d => d.DriverNavigation).WithMany(p => p.DriverTemporaryLocations)
                 .HasForeignKey(d => d.Driver)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__DriverTem__Drive__46E78A0C");
+                .HasConstraintName("FK__DriverTem__Drive__49C3F6B7");
         });
 
         modelBuilder.Entity<HistoryTravel>(entity =>

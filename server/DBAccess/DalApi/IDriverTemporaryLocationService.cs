@@ -1,6 +1,6 @@
 ﻿namespace DBAccess.DalApi
 {
-    public interface IDriverTemporaryLocationService<DriverTemporaryLocation>
+    public interface IDriverTemporaryLocationService:ICrud<DriverTemporaryLocation>
     {
     }
 }

@@ -10,5 +10,9 @@ public partial class DriverTemporaryLocation
 
     public DateTime? EndTime { get; set; }
 
+    public decimal Latitudes { get; set; }
+
+    public decimal Longitudes { get; set; }
+
     public virtual PhysicalEmployeeDetail DriverNavigation { get; set; } = null!;
 }
