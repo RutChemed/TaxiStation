@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace DBAccess.Models;
+﻿namespace DBAccess.Models;
 
 public partial class OrderingTravel
 {
