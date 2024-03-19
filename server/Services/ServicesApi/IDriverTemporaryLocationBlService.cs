@@ -1,6 +1,6 @@
 ﻿namespace Services.ServicesApi
 {
-    public interface IDriverTemporaryLocationBlService:IBlService
+    public interface IDriverTemporaryLocationBlService:IBlService<DriverTemporaryLocationDTO>
     {
     }
 }

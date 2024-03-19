@@ -1,6 +1,6 @@
 ﻿namespace Services.ServicesApi
 {
-    public interface IOrderingTravelBlService:IBlService
+    public interface IOrderingTravelBlService:IBlService<OrderingTravelDTO>
     {
     }
 }

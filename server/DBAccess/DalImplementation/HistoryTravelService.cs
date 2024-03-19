@@ -1,58 +1,29 @@
-﻿namespace DBAccess.DalImplementation
+﻿
+namespace DBAccess.DalImplementation
 {
-    public class HistoryTravelService : IHistoryRepository
+    public class HistoryTravelService : IHistoryTravelService
     {
-        public bool Exists()
+        public Task<bool> CreateAsync(HistoryTravel entity)
         {
             throw new NotImplementedException();
         }
 
-        public Task<bool> ExistsAsync(CancellationToken cancellationToken = default)
+        public Task<IEnumerable<HistoryTravel>> GetAllAsync()
         {
             throw new NotImplementedException();
         }
 
-        public IReadOnlyList<HistoryRow> GetAppliedMigrations()
+        public Task<HistoryTravel?> GetAsyncById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Task<IReadOnlyList<HistoryRow>> GetAppliedMigrationsAsync(CancellationToken cancellationToken = default)
+        public Task<bool> RemoveAsync(int id)
         {
             throw new NotImplementedException();
         }
 
-        public string GetBeginIfExistsScript(string migrationId)
-        {
-            throw new NotImplementedException();
-        }
-
-        public string GetBeginIfNotExistsScript(string migrationId)
-        {
-            throw new NotImplementedException();
-        }
-
-        public string GetCreateIfNotExistsScript()
-        {
-            throw new NotImplementedException();
-        }
-
-        public string GetCreateScript()
-        {
-            throw new NotImplementedException();
-        }
-
-        public string GetDeleteScript(string migrationId)
-        {
-            throw new NotImplementedException();
-        }
-
-        public string GetEndIfScript()
-        {
-            throw new NotImplementedException();
-        }
-
-        public string GetInsertScript(HistoryRow row)
+        public Task<bool> UpdateAsync(HistoryTravel entity)
         {
             throw new NotImplementedException();
         }

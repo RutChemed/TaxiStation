@@ -1,43 +1,135 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Services.DTO;
+using Services.ServicesApi;
+using System;
+using System.Threading.Tasks;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
-namespace UI.Controllers
+namespace EmployeeManagement.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class DriverTemporaryLocationController : ControllerBase
     {
-        // GET: api/<DriverTemporaryLocationController>
+        private readonly IDriverTemporaryLocationBlService driverTemporaryLocationBlService;
+
+        public DriverTemporaryLocationController(IDriverTemporaryLocationBlService driverTemporaryLocationBlService)
+        {
+            this.driverTemporaryLocationBlService = driverTemporaryLocationBlService;
+        }
+
         [HttpGet]
-        public IEnumerable<string> Get()
+        public async Task<ActionResult> Get()
         {
-            return new string[] { "value1", "value2" };
+            try
+            {
+                return Ok(await driverTemporaryLocationBlService.GetAllAsync());
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    "Error retrieving data from the database");
+            }
         }
 
-        // GET api/<DriverTemporaryLocationController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        [HttpGet("{id:int}")]
+        public async Task<ActionResult<DriverTemporaryLocationDTO>> GetByIdAsync(int id)
         {
-            return "value";
+            try
+            {
+                var result = await driverTemporaryLocationBlService.GetAsyncById(id);
+
+                if (result == null)
+                {
+                    return NotFound();
+                }
+
+                return result;
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    "Error retrieving data from the database");
+            }
         }
 
-        // POST api/<DriverTemporaryLocationController>
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
+        //[HttpPost]
+        //public async Task<ActionResult<DriverTemporaryLocationDTO>> CreateEAsync(DriverTemporaryLocationDTO entity)
+        //{
+        //    try
+        //    {
+        //        if (entity == null)
+        //        {
+        //            return BadRequest();
+        //        }
 
-        // PUT api/<DriverTemporaryLocationController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
+        //        var tempEntity = driverTemporaryLocationBlService.GetAsyncById(entity.Id);
 
-        // DELETE api/<DriverTemporaryLocationController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+        //        if (tempEntity != null)
+        //        {
+        //            ModelState.AddModelError("Id", "Employee Id already in use");
+        //            return BadRequest(ModelState);
+        //        }
+
+        //        var createdEntity = await driverTemporaryLocationBlService.CreateAsync(entity);
+
+        //        return CreatedAtAction(nameof(GetByIdAsync), new { id = entity.Id },
+        //            createdEntity);
+        //    }
+        //    catch (Exception)
+        //    {
+        //        return StatusCode(StatusCodes.Status500InternalServerError,
+        //            "Error retrieving data from the database");
+        //    }
+        //}
+
+        //[HttpPut("{id:int}")]
+        //public async Task<ActionResult<DriverTemporaryLocationDTO>> UpdateEmployee(int id, DriverTemporaryLocationDTO entity)
+        //{
+        //    try
+        //    {
+        //        if (id != entity.Id)
+        //        {
+        //            return BadRequest("Employee ID mismatch");
+        //        }
+
+        //        var entityToUpdate = await driverTemporaryLocationBlService.GetAsyncById(id);
+
+        //        if (entityToUpdate == null)
+        //        {
+        //            return NotFound($"Employee with Id = {id} not found");
+        //        }
+
+        //        await driverTemporaryLocationBlService.UpdateAsync(entity);
+        //        return
+        //    }
+        //    catch (Exception)
+        //    {
+        //        return StatusCode(StatusCodes.Status500InternalServerError,
+        //            "Error updating data");
+        //    }
+        //}
+
+        //[HttpDelete("{id:int}")]
+        //public async Task<ActionResult<DriverTemporaryLocationDTO>> DeleteEmployee(int id)
+        //{
+        //    try
+        //    {
+        //        var employeeToDelete = await driverTemporaryLocationBlService.GetAsyncById(id);
+
+        //        if (employeeToDelete == null)
+        //        {
+        //            return NotFound($"Employee with Id = {id} not found");
+        //        }
+
+        //        await driverTemporaryLocationBlService.RemoveAsync(id);
+        //        return
+        //    }
+        //    catch (Exception)
+        //    {
+        //        return StatusCode(StatusCodes.Status500InternalServerError,
+        //            "Error deleting data");
+        //    }
+        //}
     }
 }

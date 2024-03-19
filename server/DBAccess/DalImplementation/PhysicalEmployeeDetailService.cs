@@ -1,4 +1,5 @@
-﻿namespace DBAccess.DalImplementation
+﻿
+namespace DBAccess.DalImplementation
 {
     public class PhysicalEmployeeDetailService : IPhysicalEmployeeDetailService
     {
@@ -7,22 +8,22 @@
             throw new NotImplementedException();
         }
 
-        public Task<List<PhysicalEmployeeDetail>> GetAllAsync()
+        public Task<IEnumerable<PhysicalEmployeeDetail>> GetAllAsync()
         {
             throw new NotImplementedException();
         }
 
-        public Task<PhysicalEmployeeDetail?> GetAsyncById(string id)
+        public Task<PhysicalEmployeeDetail?> GetAsyncById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Task<bool> RemoveAsync(string id)
+        public Task<bool> RemoveAsync(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Task<bool> UpdateAsync(string id, PhysicalEmployeeDetail entity)
+        public Task<bool> UpdateAsync(PhysicalEmployeeDetail entity)
         {
             throw new NotImplementedException();
         }

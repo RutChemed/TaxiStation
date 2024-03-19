@@ -1,8 +1,4 @@
-﻿using DBAccess.Models;
-using Services.DTO;
-using System.Net;
-
-namespace Services.Profiles
+﻿namespace Services.Profiles
 {
     public class DriverTemporaryLocationProfile:Profile
     {

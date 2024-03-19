@@ -1,4 +1,6 @@
-﻿namespace DBAccess.DalImplementation
+﻿
+
+namespace DBAccess.DalImplementation
 {
     public class OrderingTravelService : IOrderingTravelService
     {
@@ -7,22 +9,22 @@
             throw new NotImplementedException();
         }
 
-        public Task<List<OrderingTravel>> GetAllAsync()
+        public Task<IEnumerable<OrderingTravel>> GetAllAsync()
         {
             throw new NotImplementedException();
         }
 
-        public Task<OrderingTravel?> GetAsyncById(string id)
+        public Task<OrderingTravel?> GetAsyncById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Task<bool> RemoveAsync(string id)
+        public Task<bool> RemoveAsync(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Task<bool> UpdateAsync(string id, OrderingTravel entity)
+        public Task<bool> UpdateAsync(OrderingTravel entity)
         {
             throw new NotImplementedException();
         }

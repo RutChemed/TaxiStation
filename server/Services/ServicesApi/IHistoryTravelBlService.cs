@@ -1,6 +1,6 @@
 ﻿namespace Services.ServicesApi
 {
-    public interface IHistoryTravelBlService:IBlService
+    public interface IHistoryTravelBlService:IBlService<HistoryTravelDTO>
     {
     }
 }

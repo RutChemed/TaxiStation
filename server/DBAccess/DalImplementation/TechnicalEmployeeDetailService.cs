@@ -7,22 +7,22 @@
             throw new NotImplementedException();
         }
 
-        public Task<List<TechnicalEmployeeDetail>> GetAllAsync()
+        public Task<IEnumerable<TechnicalEmployeeDetail>> GetAllAsync()
         {
             throw new NotImplementedException();
         }
 
-        public Task<TechnicalEmployeeDetail?> GetAsyncById(string id)
+        public Task<TechnicalEmployeeDetail?> GetAsyncById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Task<bool> RemoveAsync(string id)
+        public Task<bool> RemoveAsync(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Task<bool> UpdateAsync(string id, TechnicalEmployeeDetail entity)
+        public Task<bool> UpdateAsync(TechnicalEmployeeDetail entity)
         {
             throw new NotImplementedException();
         }

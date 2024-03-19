@@ -1,6 +1,4 @@
-﻿
-
-namespace Services.Profiles
+﻿namespace Services.Profiles
 {
     public class TechnicalEmployeeDetailProfile:Profile
     {

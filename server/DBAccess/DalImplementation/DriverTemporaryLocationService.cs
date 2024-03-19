@@ -7,31 +7,56 @@
         {
                 this.taxiStationContext = taxiStationContext;   
         }
-        public Task<bool> CreateAsync(DriverTemporaryLocation entity)
+        public async Task<bool> CreateAsync(DriverTemporaryLocation entity)
         {
-            taxiStationContext.DriverTemporaryLocations.Add(entity);
-            taxiStationContext.SaveChanges();
-            return Task.FromResult(true);
+
+            var result = await taxiStationContext.DriverTemporaryLocations.AddAsync(entity);
+            await taxiStationContext.SaveChangesAsync();
+            return true;
+        }
+        public async Task<IEnumerable<DriverTemporaryLocation>> GetAllAsync()
+        {
+            return await taxiStationContext.DriverTemporaryLocations.ToListAsync();
         }
 
-        public Task<List<DriverTemporaryLocation>> GetAllAsync()
+        public async Task<DriverTemporaryLocation?> GetAsyncById(int id)
         {
-            throw new NotImplementedException();
+            return await taxiStationContext.DriverTemporaryLocations
+                .FirstOrDefaultAsync(e => e.Id == id);
         }
 
-        public Task<DriverTemporaryLocation?> GetAsyncById(string id)
+        public async Task<bool> RemoveAsync(int id)
         {
-            throw new NotImplementedException();
+            var result = await taxiStationContext.DriverTemporaryLocations
+            .FirstOrDefaultAsync(e => e.Id == id);
+            if (result != null)
+            {
+                taxiStationContext.DriverTemporaryLocations.Remove(result);
+                await taxiStationContext.SaveChangesAsync();
+                return true;
+            }
+
+            return false;
         }
 
-        public Task<bool> RemoveAsync(string id)
+        public async Task<bool> UpdateAsync(DriverTemporaryLocation entity)
         {
-            throw new NotImplementedException();
-        }
+            var result = await taxiStationContext.DriverTemporaryLocations
+                .FirstOrDefaultAsync(e => e.Id == entity.Id);
 
-        public Task<bool> UpdateAsync(string id, DriverTemporaryLocation entity)
-        {
-            throw new NotImplementedException();
+            if (result != null)
+            {
+                result.Driver = entity.Driver;
+                result.StartTime = entity.StartTime;
+                result.EndTime = entity.EndTime;
+                result.Latitudes = entity.Latitudes;
+                result.Longitudes = entity.Longitudes;
+                result.DriverNavigation = entity.DriverNavigation;
+                await taxiStationContext.SaveChangesAsync();
+                return true;
+            }
+
+            return true;
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Services.ServicesApi
 {
-    public interface ITechnicalEmployeeDetailBlService:IBlService
+    public interface ITechnicalEmployeeDetailBlService:IBlService<TechnicalEmployeeDetailDTO>
     {
     }
 }
