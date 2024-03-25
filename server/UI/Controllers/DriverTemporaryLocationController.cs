@@ -52,35 +52,35 @@ namespace EmployeeManagement.Api.Controllers
             }
         }
 
-        //[HttpPost]
-        //public async Task<ActionResult<DriverTemporaryLocationDTO>> CreateEAsync(DriverTemporaryLocationDTO entity)
-        //{
-        //    try
-        //    {
-        //        if (entity == null)
-        //        {
-        //            return BadRequest();
-        //        }
+        [HttpPost]
+        public async Task<ActionResult<DriverTemporaryLocationDTO>> CreateEAsync(DriverTemporaryLocationDTO entity)
+        {
+            try
+            {
+                if (entity == null)
+                {
+                    return BadRequest();
+                }
 
-        //        var tempEntity = driverTemporaryLocationBlService.GetAsyncById(entity.Id);
+                var tempEntity = driverTemporaryLocationBlService.GetAsyncById(entity.Id);
 
-        //        if (tempEntity != null)
-        //        {
-        //            ModelState.AddModelError("Id", "Employee Id already in use");
-        //            return BadRequest(ModelState);
-        //        }
+                if (tempEntity != null)
+                {
+                    ModelState.AddModelError("Id", "Employee Id already in use");
+                    return BadRequest(ModelState);
+                }
 
-        //        var createdEntity = await driverTemporaryLocationBlService.CreateAsync(entity);
+                var createdEntity = await driverTemporaryLocationBlService.CreateAsync(entity);
 
-        //        return CreatedAtAction(nameof(GetByIdAsync), new { id = entity.Id },
-        //            createdEntity);
-        //    }
-        //    catch (Exception)
-        //    {
-        //        return StatusCode(StatusCodes.Status500InternalServerError,
-        //            "Error retrieving data from the database");
-        //    }
-        //}
+                return CreatedAtAction(nameof(GetByIdAsync), new { id = entity.Id },
+                    createdEntity);
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    "Error retrieving data from the database");
+            }
+        }
 
         //[HttpPut("{id:int}")]
         //public async Task<ActionResult<DriverTemporaryLocationDTO>> UpdateEmployee(int id, DriverTemporaryLocationDTO entity)
@@ -121,8 +121,8 @@ namespace EmployeeManagement.Api.Controllers
         //            return NotFound($"Employee with Id = {id} not found");
         //        }
 
-        //        await driverTemporaryLocationBlService.RemoveAsync(id);
-        //        return
+        //        return await driverTemporaryLocationBlService.RemoveAsync(id);
+
         //    }
         //    catch (Exception)
         //    {
