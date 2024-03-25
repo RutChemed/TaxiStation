@@ -1,1 +1,3 @@
 /DB
+server/UI/appsettings.Development.json/ConnectionStrings
+server/UI/appsettings.Development.json/frontend_url
