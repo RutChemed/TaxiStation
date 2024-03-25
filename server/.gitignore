@@ -1,3 +1,7 @@
 /DB
-server/UI/appsettings.Development.json/ConnectionStrings
-server/UI/appsettings.Development.json/frontend_url
+# Ignore appsettings.Development.json file
+appsettings.Development.json
+
+# Ignore ConnectionStrings and frontend_url within the JSON file
+*ConnectionStrings*
+*frontend_url*

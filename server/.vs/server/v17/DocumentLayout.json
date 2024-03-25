@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{56BB5083-3305-4D3C-B671-7E84836A689A}|UI\\UI.csproj|C:\\Users\\user\\Desktop\\TaxiStation\\server\\ui\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{56BB5083-3305-4D3C-B671-7E84836A689A}|UI\\UI.csproj|solutionrelative:ui\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56BB5083-3305-4D3C-B671-7E84836A689A}|UI\\UI.csproj|C:\\Users\\user\\Desktop\\TaxiStation\\server\\ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56BB5083-3305-4D3C-B671-7E84836A689A}|UI\\UI.csproj|solutionrelative:ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{56BB5083-3305-4D3C-B671-7E84836A689A}|UI\\UI.csproj|c:\\users\\user\\desktop\\taxistation\\server\\ui\\controllers\\drivertemporarylocationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{56BB5083-3305-4D3C-B671-7E84836A689A}|UI\\UI.csproj|solutionrelative:ui\\controllers\\drivertemporarylocationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,14 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{56BB5083-3305-4D3C-B671-7E84836A689A}|UI\\UI.csproj|C:\\Users\\user\\Desktop\\TaxiStation\\server\\ui\\controllers\\historytravelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{56BB5083-3305-4D3C-B671-7E84836A689A}|UI\\UI.csproj|solutionrelative:ui\\controllers\\historytravelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56BB5083-3305-4D3C-B671-7E84836A689A}|UI\\UI.csproj|C:\\Users\\user\\Desktop\\TaxiStation\\server\\ui\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{56BB5083-3305-4D3C-B671-7E84836A689A}|UI\\UI.csproj|solutionrelative:ui\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56BB5083-3305-4D3C-B671-7E84836A689A}|UI\\UI.csproj|C:\\Users\\user\\Desktop\\TaxiStation\\server\\ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56BB5083-3305-4D3C-B671-7E84836A689A}|UI\\UI.csproj|solutionrelative:ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|C:\\Users\\user\\Desktop\\TaxiStation\\server\\dbaccess\\dalapi\\idrivertemporarylocationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -217,15 +217,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "DriverTemporaryLocationController.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UI\\Controllers\\DriverTemporaryLocationController.cs",
               "RelativeDocumentMoniker": "UI\\Controllers\\DriverTemporaryLocationController.cs",
@@ -238,31 +234,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UI\\Program.cs",
               "RelativeDocumentMoniker": "UI\\Program.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UI\\Program.cs",
               "RelativeToolTip": "UI\\Program.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABEAAAA0AAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABEAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T21:53:01.289Z"
+              "WhenOpened": "2024-03-13T21:53:01.289Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DriverTemporaryLocationBlService.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesImplementation\\DriverTemporaryLocationBlService.cs",
-              "RelativeDocumentMoniker": "Services\\ServicesImplementation\\DriverTemporaryLocationBlService.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesImplementation\\DriverTemporaryLocationBlService.cs",
-              "RelativeToolTip": "Services\\ServicesImplementation\\DriverTemporaryLocationBlService.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAwBsAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T21:37:02.53Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "HistoryTravelController.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UI\\Controllers\\HistoryTravelController.cs",
               "RelativeDocumentMoniker": "UI\\Controllers\\HistoryTravelController.cs",
@@ -274,15 +259,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UI\\appsettings.Development.json",
               "RelativeDocumentMoniker": "UI\\appsettings.Development.json",
               "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UI\\appsettings.Development.json",
               "RelativeToolTip": "UI\\appsettings.Development.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAUAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-03-13T21:52:55.64Z"
+              "WhenOpened": "2024-03-13T21:52:55.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DriverTemporaryLocationBlService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesImplementation\\DriverTemporaryLocationBlService.cs",
+              "RelativeDocumentMoniker": "Services\\ServicesImplementation\\DriverTemporaryLocationBlService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesImplementation\\DriverTemporaryLocationBlService.cs",
+              "RelativeToolTip": "Services\\ServicesImplementation\\DriverTemporaryLocationBlService.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwBsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T21:37:02.53Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
