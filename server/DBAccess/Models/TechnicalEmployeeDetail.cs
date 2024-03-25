@@ -1,4 +1,7 @@
-﻿namespace DBAccess.Models;
+﻿using System;
+using System.Collections.Generic;
+
+namespace DBAccess.Models;
 
 public partial class TechnicalEmployeeDetail
 {

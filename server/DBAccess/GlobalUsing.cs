@@ -9,4 +9,4 @@ global using Microsoft.EntityFrameworkCore.Migrations;
 global using Microsoft.Extensions.Configuration;
 global using System.Configuration;
 global using Microsoft.EntityFrameworkCore;
-
+global using Microsoft.Extensions.DependencyInjection;

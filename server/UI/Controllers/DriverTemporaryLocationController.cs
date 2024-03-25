@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Services.DTO;
 using Services.ServicesApi;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace EmployeeManagement.Api.Controllers
@@ -19,16 +20,14 @@ namespace EmployeeManagement.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult> Get()
+        public async Task<IEnumerable<DriverTemporaryLocationDTO>> GetAsync()
         {
             try
             {
-                return Ok(await driverTemporaryLocationBlService.GetAllAsync());
+                return await driverTemporaryLocationBlService.GetAllAsync();
             }
-            catch (Exception)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError,
-                    "Error retrieving data from the database");
+            catch (Exception ex) { 
+                return new List<DriverTemporaryLocationDTO>();
             }
         }
 

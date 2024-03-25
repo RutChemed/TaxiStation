@@ -2,7 +2,7 @@
 {
     public class DriverTemporaryLocationService : IDriverTemporaryLocationService
     {
-        TaxiStationContext taxiStationContext;
+        private readonly TaxiStationContext taxiStationContext;
         public DriverTemporaryLocationService(TaxiStationContext taxiStationContext)
         {
                 this.taxiStationContext = taxiStationContext;   

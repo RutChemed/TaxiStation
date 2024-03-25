@@ -1,6 +1,7 @@
 using DBAccess;
 using DBAccess.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Services;
 using Services.ServicesApi;
 using Services.ServicesImplementation;
@@ -9,22 +10,19 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
+
+//Configure the connection string
+string connectionString = builder.Configuration.GetConnectionString("TaxiStationDB");
+
+//Add services from DAL and BL layers
+builder.Services.AddDALServices(connectionString);
 builder.Services.AddServices();
-//this code takes conn string from app settings, BUT does not handle the problem of local path
-builder.Services.AddDbContext<TaxiStationContext>((services, options) =>
-{
-    var config = services.GetRequiredService<IConfiguration>();
-    var connString = config.GetConnectionString("TaxiStationDB");
-    options.UseSqlServer(connString);
-});
-//DBActions db = new DBActions(builder.Configuration);
-//string connStr = db.GetConnectionString("FactoryDB");
-//builder.Services.AddDbContext<TaxiStationContext>(opt => opt.UseSqlServer(connStr));
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddTransient<IDriverTemporaryLocationBlService, DriverTemporaryLocationBlService>();
-
 
 var provider = builder.Services.BuildServiceProvider();
 var configuration = provider.GetRequiredService<IConfiguration>();

@@ -1,4 +1,8 @@
-﻿namespace DBAccess.Models;
+﻿using System;
+using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
+
+namespace DBAccess.Models;
 
 public partial class TaxiStationContext : DbContext
 {

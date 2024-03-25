@@ -12,8 +12,10 @@ global using Services.Profiles;
 global using AutoMapper;
 global using DBAccess.Models;
 global using Services.DTO;
-global using System.Net;
 global using Services.ServicesApi;
+global using Microsoft.EntityFrameworkCore;
+global using DBAccess;
+
 
 
 
