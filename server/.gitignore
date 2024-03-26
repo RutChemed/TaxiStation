@@ -1,6 +1,6 @@
 /DB
 # Ignore appsettings.Development.json file
-appsettings.Development.json
+# appsettings.Development.json
 
 # Ignore ConnectionStrings and frontend_url within the JSON file
 *ConnectionStrings*
