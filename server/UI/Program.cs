@@ -14,8 +14,13 @@ builder.Services.AddControllers();
 //Configure the connection string
 string connectionString = builder.Configuration.GetConnectionString("TaxiStationDB");
 
-//Add services from DAL and BL layers
-builder.Services.AddDALServices(connectionString);
+builder.Services.AddDbContext<TaxiStationContext>((options) =>
+{
+    //var config = services.GetRequiredService<IConfiguration>();
+    //var connStr = config.GetConnectionString("TaxiStationDB");
+    options.UseSqlServer(connectionString);
+});
+//Add services from BL layers
 builder.Services.AddServices();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -23,13 +28,19 @@ builder.Services.AddServices();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddTransient<IDriverTemporaryLocationBlService, DriverTemporaryLocationBlService>();
+builder.Services.AddTransient<IHistoryTravelBlService, HistoryTravelBlService>();
+builder.Services.AddTransient<IOrderingTravelBlService, OrderingTravelBlService>();
+builder.Services.AddTransient<ITechnicalEmployeeDetailBlService,TechnicalEmployeeDetailBlService>();
+builder.Services.AddTransient<IPhysicalEmployeeDetailBlService, PhysicalEmployeeDetailBlService>();
+
 
 var provider = builder.Services.BuildServiceProvider();
 var configuration = provider.GetRequiredService<IConfiguration>();
 
 builder.Services.AddCors(option =>
 {
-    var frontendURL = configuration.GetValue<string>("frontend_url");
+    //var frontendURL = configuration.GetValue<string>("frontend_url");
+    var frontendURL = builder.Configuration.GetValue<string>("frontend_url");
     option.AddDefaultPolicy(builder =>
     {
         builder.WithOrigins(frontendURL).AllowAnyMethod().AllowAnyHeader();
@@ -53,3 +64,4 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+    

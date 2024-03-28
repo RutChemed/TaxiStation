@@ -82,32 +82,32 @@ namespace EmployeeManagement.Api.Controllers
             }
         }
 
-        [HttpPut("{id:int}")]
-        public async Task<ActionResult<DriverTemporaryLocationDTO>> UpdateEmployee(int id, DriverTemporaryLocationDTO entity)
-        {
-            try
-            {
-                if (id != entity.Id)
-                {
-                    return BadRequest("Employee ID mismatch");
-                }
+        //[HttpPut("{id:int}")]
+        //public async Task<ActionResult<DriverTemporaryLocationDTO>> UpdateEmployee(int id, DriverTemporaryLocationDTO entity)
+        //{
+        //    try
+        //    {
+        //        if (id != entity.Id)
+        //        {
+        //            return BadRequest("Employee ID mismatch");
+        //        }
 
-                var entityToUpdate = await driverTemporaryLocationBlService.GetAsyncById(id);
+        //        var entityToUpdate = await driverTemporaryLocationBlService.GetAsyncById(id);
 
-                if (entityToUpdate == null)
-                {
-                    return NotFound($"Employee with Id = {id} not found");
-                }
+        //        if (entityToUpdate == null)
+        //        {
+        //            return NotFound($"Employee with Id = {id} not found");
+        //        }
 
-                await driverTemporaryLocationBlService.UpdateAsync(entity);
-                return
-            }
-            catch (Exception)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError,
-                    "Error updating data");
-            }
-        }
+        //        await driverTemporaryLocationBlService.UpdateAsync(entity);
+        //        return
+        //    }
+        //    catch (Exception)
+        //    {
+        //        return StatusCode(StatusCodes.Status500InternalServerError,
+        //            "Error updating data");
+        //    }
+        //}
 
         //[HttpDelete("{id:int}")]
         //public async Task<ActionResult<DriverTemporaryLocationDTO>> DeleteEmployee(int id)

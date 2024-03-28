@@ -1,5 +1,4 @@
-﻿
-namespace Services.ServicesImplementation
+﻿namespace Services.ServicesImplementation
 {
     public class DriverTemporaryLocationBlService : IDriverTemporaryLocationBlService
     {

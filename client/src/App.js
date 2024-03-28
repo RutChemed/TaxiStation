@@ -1,12 +1,12 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
-import { urlWeather } from './endpoints';
+import { urlDriverTemporaryLocation } from './endpoints';
 import { useEffect } from 'react';
 
 function App() {
   useEffect(()=>{
-    axios.get(urlWeather).then((response)=>{
+    axios.get(urlDriverTemporaryLocation).then((response)=>{
       console.log(response.data);}
     )
   },[])  

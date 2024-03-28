@@ -2,29 +2,65 @@
 {
     public class TechnicalEmployeeDetailService : ITechnicalEmployeeDetailService
     {
-        public Task<bool> CreateAsync(TechnicalEmployeeDetail entity)
+        private readonly TaxiStationContext taxiStationContext;
+        public TechnicalEmployeeDetailService(TaxiStationContext taxiStationContext)
         {
-            throw new NotImplementedException();
+            this.taxiStationContext = taxiStationContext;
+        }
+        public async Task<bool> CreateAsync(TechnicalEmployeeDetail entity)
+        {
+
+            var result = await taxiStationContext.TechnicalEmployeeDetails.AddAsync(entity);
+            await taxiStationContext.SaveChangesAsync();
+            return true;
+        }
+        public async Task<IEnumerable<TechnicalEmployeeDetail>> GetAllAsync()
+        {
+            return await taxiStationContext.TechnicalEmployeeDetails.ToListAsync();
         }
 
-        public Task<IEnumerable<TechnicalEmployeeDetail>> GetAllAsync()
+        public async Task<TechnicalEmployeeDetail?> GetAsyncById(int id)
         {
-            throw new NotImplementedException();
+            return await taxiStationContext.TechnicalEmployeeDetails
+                .FirstOrDefaultAsync(e => e.Id == id);
         }
 
-        public Task<TechnicalEmployeeDetail?> GetAsyncById(int id)
+        public async Task<bool> RemoveAsync(int id)
         {
-            throw new NotImplementedException();
+            var result = await taxiStationContext.TechnicalEmployeeDetails
+            .FirstOrDefaultAsync(e => e.Id == id);
+            if (result != null)
+            {
+                taxiStationContext.TechnicalEmployeeDetails.Remove(result);
+                await taxiStationContext.SaveChangesAsync();
+                return true;
+            }
+
+            return false;
         }
 
-        public Task<bool> RemoveAsync(int id)
+        public async Task<bool> UpdateAsync(TechnicalEmployeeDetail entity)
         {
-            throw new NotImplementedException();
-        }
+            var result = await taxiStationContext.TechnicalEmployeeDetails
+                .FirstOrDefaultAsync(e => e.Id == entity.Id);
 
-        public Task<bool> UpdateAsync(TechnicalEmployeeDetail entity)
-        {
-            throw new NotImplementedException();
+            if (result != null)
+            {
+                result.FirstName = entity.FirstName;
+                result.LastName = entity.LastName;
+                result.Phone = entity.Phone;
+                result.Email = entity.Email;
+                result.Password = entity.Password;
+                result.DepartureDate = entity.DepartureDate;
+                result.Role = entity.Role;
+                result.AddressLatitudes = entity.AddressLatitudes;
+                result.AddressLongitudes = entity.AddressLongitudes;
+                //result.PhysicalEmployeeDetails = entity.PhysicalEmployeeDetails; -without set function
+                await taxiStationContext.SaveChangesAsync();
+                return true;
+            }
+
+            return true;
         }
     }
 }

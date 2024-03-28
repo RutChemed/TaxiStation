@@ -21,6 +21,32 @@
   },
   {
     "ContainingType": "EmployeeManagement.Api.Controllers.DriverTemporaryLocationController",
+    "Method": "CreateEAsync",
+    "RelativePath": "api/DriverTemporaryLocation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "Services.DTO.DriverTemporaryLocationDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Services.DTO.DriverTemporaryLocationDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "EmployeeManagement.Api.Controllers.DriverTemporaryLocationController",
     "Method": "GetByIdAsync",
     "RelativePath": "api/DriverTemporaryLocation/{id}",
     "HttpMethod": "GET",
@@ -392,6 +418,52 @@
       {
         "Type": "System.Void",
         "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UI.Controllers.HistoryTravelController",
+    "Method": "Get",
+    "RelativePath": "HistoryTravel",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Services.DTO.HistoryTravelDTO, Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UI.Controllers.HistoryTravelController",
+    "Method": "GetEmployee",
+    "RelativePath": "HistoryTravel/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Services.DTO.HistoryTravelDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
         "StatusCode": 200
       }
     ]

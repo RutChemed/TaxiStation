@@ -1,31 +1,65 @@
 ﻿
+using DBAccess.Models;
+
 namespace DBAccess.DalImplementation
 {
     public class PhysicalEmployeeDetailService : IPhysicalEmployeeDetailService
     {
-        public Task<bool> CreateAsync(PhysicalEmployeeDetail entity)
+        private readonly TaxiStationContext taxiStationContext;
+        public PhysicalEmployeeDetailService(TaxiStationContext taxiStationContext)
         {
-            throw new NotImplementedException();
+            this.taxiStationContext = taxiStationContext;
+        }
+        public async Task<bool> CreateAsync(PhysicalEmployeeDetail entity)
+        {
+
+            var result = await taxiStationContext.PhysicalEmployeeDetails.AddAsync(entity);
+            await taxiStationContext.SaveChangesAsync();
+            return true;
+        }
+        public async Task<IEnumerable<PhysicalEmployeeDetail>> GetAllAsync()
+        {
+            return await taxiStationContext.PhysicalEmployeeDetails.ToListAsync();
         }
 
-        public Task<IEnumerable<PhysicalEmployeeDetail>> GetAllAsync()
+        public async Task<PhysicalEmployeeDetail?> GetAsyncById(int id)
         {
-            throw new NotImplementedException();
+            return await taxiStationContext.PhysicalEmployeeDetails
+                .FirstOrDefaultAsync(e => e.Id == id);
         }
 
-        public Task<PhysicalEmployeeDetail?> GetAsyncById(int id)
+        public async Task<bool> RemoveAsync(int id)
         {
-            throw new NotImplementedException();
+            var result = await taxiStationContext.PhysicalEmployeeDetails
+            .FirstOrDefaultAsync(e => e.Id == id);
+            if (result != null)
+            {
+                taxiStationContext.PhysicalEmployeeDetails.Remove(result);
+                await taxiStationContext.SaveChangesAsync();
+                return true;
+            }
+
+            return false;
         }
 
-        public Task<bool> RemoveAsync(int id)
+        public async Task<bool> UpdateAsync(PhysicalEmployeeDetail entity)
         {
-            throw new NotImplementedException();
-        }
+            var result = await taxiStationContext.PhysicalEmployeeDetails
+                .FirstOrDefaultAsync(e => e.Id == entity.Id);
 
-        public Task<bool> UpdateAsync(PhysicalEmployeeDetail entity)
-        {
-            throw new NotImplementedException();
+            if (result != null)
+            {
+                result.Employee = entity.Employee;
+                result.Available = entity.Available;
+                result.NumPlaces = entity.NumPlaces;
+                result.Latitudes = entity.Latitudes;
+                result.Longitudes = entity.Longitudes;
+                result.EmployeeNavigation = entity.EmployeeNavigation;
+                await taxiStationContext.SaveChangesAsync();
+                return true;
+            }
+
+            return true;
         }
     }
 }

@@ -1,31 +1,65 @@
-﻿
-namespace DBAccess.DalImplementation
+﻿namespace DBAccess.DalImplementation
 {
     public class HistoryTravelService : IHistoryTravelService
     {
-        public Task<bool> CreateAsync(HistoryTravel entity)
+        private readonly TaxiStationContext taxiStationContext;
+        public HistoryTravelService(TaxiStationContext taxiStationContext)
         {
-            throw new NotImplementedException();
+            this.taxiStationContext = taxiStationContext;
+        }
+        public async Task<bool> CreateAsync(HistoryTravel entity)
+        {
+
+            var result = await taxiStationContext.HistoryTravels.AddAsync(entity);
+            await taxiStationContext.SaveChangesAsync();
+            return true;
+        }
+        public async Task<IEnumerable<HistoryTravel>> GetAllAsync()
+        {
+            return await taxiStationContext.HistoryTravels.ToListAsync();
         }
 
-        public Task<IEnumerable<HistoryTravel>> GetAllAsync()
+        public async Task<HistoryTravel?> GetAsyncById(int id)
         {
-            throw new NotImplementedException();
+            return await taxiStationContext.HistoryTravels
+                .FirstOrDefaultAsync(e => e.Id == id);
         }
 
-        public Task<HistoryTravel?> GetAsyncById(int id)
+        public async Task<bool> RemoveAsync(int id)
         {
-            throw new NotImplementedException();
+            var result = await taxiStationContext.HistoryTravels
+            .FirstOrDefaultAsync(e => e.Id == id);
+            if (result != null)
+            {
+                taxiStationContext.HistoryTravels.Remove(result);
+                await taxiStationContext.SaveChangesAsync();
+                return true;
+            }
+
+            return false;
         }
 
-        public Task<bool> RemoveAsync(int id)
+        public async Task<bool> UpdateAsync(HistoryTravel entity)
         {
-            throw new NotImplementedException();
-        }
+            var result = await taxiStationContext.HistoryTravels
+                .FirstOrDefaultAsync(e => e.Id == entity.Id);
 
-        public Task<bool> UpdateAsync(HistoryTravel entity)
-        {
-            throw new NotImplementedException();
+            if (result != null)
+            {
+                result.StartTime = entity.StartTime;
+                result.EndTime = entity.EndTime;
+                result.ExitLatitudes = entity.ExitLatitudes;
+                result.ExitLongitudes = entity.ExitLongitudes;
+                result.TargetLatitudes = entity.TargetLatitudes;
+                result.TargetLongitudes = entity.TargetLongitudes;
+                result.PassengersNum = entity.PassengersNum;
+                result.Driver = entity.Driver;
+                result.ClientPhone = entity.ClientPhone;
+                await taxiStationContext.SaveChangesAsync();
+                return true;
+            }
+
+            return true;
         }
     }
 }
