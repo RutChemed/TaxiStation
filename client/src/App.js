@@ -3,31 +3,16 @@ import './App.css';
 import axios from 'axios';
 import { urlDriverTemporaryLocation } from './endpoints';
 import { useEffect } from 'react';
+import DriverTemporaryLocation from './DriverTemporaryLocation';
 
-function App() {
-  useEffect(()=>{
-    axios.get(urlDriverTemporaryLocation).then((response)=>{
-      console.log(response.data);}
-    )
-  },[])  
+function App() { 
   return (
-    <>
-<p>hi</p>
-    </>
-  );
+      <>
+        <DriverTemporaryLocation></DriverTemporaryLocation>
+      </>
+    );
 }
 
 export default App;
-// import { useEffect } from 'react';
-// import './App.css';
-// import {urlWeather} from './endpoints';
-// import axios,{AxiosResponse} from 'axios';
 
-// function App() {
 
-//   useEffect(() => {
-//     axios.get(urlWeather).then((response: AxiosResponse<any>) => {
-//       // axios.get(urlWeather).then((response) => {
-//       console.log(response.data);
-//     })
-//   },[])
