@@ -1,18 +1,20 @@
 ﻿namespace DBAccess.DalImplementation
 {
-    public class HistoryTravelService : IHistoryTravelService
+    public class HistoryTravelService
+        :
+        IHistoryTravelService
     {
         private readonly TaxiStationContext taxiStationContext;
         public HistoryTravelService(TaxiStationContext taxiStationContext)
         {
             this.taxiStationContext = taxiStationContext;
         }
-        public async Task<bool> CreateAsync(HistoryTravel entity)
-        {
 
-            var result = await taxiStationContext.HistoryTravels.AddAsync(entity);
+        public async Task<HistoryTravel> CreateAsync(HistoryTravel entity)
+        {
+            taxiStationContext.HistoryTravels.Add(entity);
             await taxiStationContext.SaveChangesAsync();
-            return true;
+            return entity;
         }
         public async Task<IEnumerable<HistoryTravel>> GetAllAsync()
         {
@@ -25,18 +27,18 @@
                 .FirstOrDefaultAsync(e => e.Id == id);
         }
 
-        public async Task<bool> RemoveAsync(int id)
+        public async Task<HistoryTravel> RemoveAsync(int entityId)
         {
             var result = await taxiStationContext.HistoryTravels
-            .FirstOrDefaultAsync(e => e.Id == id);
+            .FirstOrDefaultAsync(e => e.Id == entityId);
             if (result != null)
             {
                 taxiStationContext.HistoryTravels.Remove(result);
                 await taxiStationContext.SaveChangesAsync();
-                return true;
+                return result;
             }
 
-            return false;
+            return null;
         }
 
         public async Task<bool> UpdateAsync(HistoryTravel entity)

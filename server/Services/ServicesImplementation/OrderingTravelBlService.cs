@@ -10,10 +10,11 @@
             _orderingTravelService = orderingTravelService;
 
         }
-        public async Task<bool> CreateAsync(OrderingTravelDTO entity)
+        public async Task<OrderingTravelDTO> CreateAsync(OrderingTravelDTO entity)
         {
-            OrderingTravel dalEntity = _mapper.Map<OrderingTravel>(entity);
-            return await _orderingTravelService.CreateAsync(dalEntity);
+            var dalEntity = _mapper.Map<OrderingTravel>(entity);
+            var createdEntity = await _orderingTravelService.CreateAsync(dalEntity);
+            return _mapper.Map<OrderingTravelDTO>(createdEntity);
         }
 
         public async Task<bool> UpdateAsync(OrderingTravelDTO entity)
@@ -22,9 +23,15 @@
             return await _orderingTravelService.UpdateAsync(dalEntity);
         }
 
-        public async Task<bool> RemoveAsync(int id)
+        public async Task<OrderingTravelDTO> RemoveAsync(int id)
         {
-            return await _orderingTravelService.RemoveAsync(id);
+            var deletedEntity = await _orderingTravelService.RemoveAsync(id);
+            if (deletedEntity != null)
+            {
+                return _mapper.Map<OrderingTravelDTO>(deletedEntity);
+            }
+
+            return null;
         }
 
         public async Task<IEnumerable<OrderingTravelDTO>> GetAllAsync()

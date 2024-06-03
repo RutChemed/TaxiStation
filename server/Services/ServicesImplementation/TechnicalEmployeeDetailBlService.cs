@@ -10,21 +10,26 @@
             _technicalEmployeeDetailService = technicalEmployeeDetailService;
 
         }
-        public async Task<bool> CreateAsync(TechnicalEmployeeDetailDTO entity)
+        public async Task<TechnicalEmployeeDetailDTO> CreateAsync(TechnicalEmployeeDetailDTO entity)
         {
-            TechnicalEmployeeDetail dalEntity = _mapper.Map<TechnicalEmployeeDetail>(entity);
-            return await _technicalEmployeeDetailService.CreateAsync(dalEntity);
+            var dalEntity = _mapper.Map<TechnicalEmployeeDetail>(entity);
+            var createdEntity = await _technicalEmployeeDetailService.CreateAsync(dalEntity);
+            return _mapper.Map<TechnicalEmployeeDetailDTO>(createdEntity);
         }
-
         public async Task<bool> UpdateAsync(TechnicalEmployeeDetailDTO entity)
         {
             TechnicalEmployeeDetail dalEntity = _mapper.Map<TechnicalEmployeeDetail>(entity);
             return await _technicalEmployeeDetailService.UpdateAsync(dalEntity);
         }
-
-        public async Task<bool> RemoveAsync(int id)
+        public async Task<TechnicalEmployeeDetailDTO> RemoveAsync(int id)
         {
-            return await _technicalEmployeeDetailService.RemoveAsync(id);
+            var deletedEntity = await _technicalEmployeeDetailService.RemoveAsync(id);
+            if (deletedEntity != null)
+            {
+                return _mapper.Map<TechnicalEmployeeDetailDTO>(deletedEntity);
+            }
+
+            return null;
         }
 
         public async Task<IEnumerable<TechnicalEmployeeDetailDTO>> GetAllAsync()

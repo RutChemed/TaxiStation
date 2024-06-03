@@ -2,7 +2,7 @@
 {
     public class HistoryTravelDTO
     {
-        public int Id { get; set; }
+        public int? Id { get; set; }
 
         public DateTime StartTime { get; set; }
 
@@ -22,6 +22,5 @@
 
         public string ClientPhone { get; set; } = null!;
 
-        public virtual PhysicalEmployeeDetailDTO DriverNavigation { get; set; } = null!;
     }
 }

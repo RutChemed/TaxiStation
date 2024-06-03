@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Services.ServicesImplementation;
 
 namespace UI.Controllers
 {
@@ -6,18 +6,45 @@ namespace UI.Controllers
     [Route("api/[controller]")]
     public class PhysicalEmployeeDetailController : ControllerBase
     {
-        // GET: api/<PhysicalEmployeeDetailController>
-        [HttpGet]
-        public IEnumerable<string> Get()
+        private readonly IPhysicalEmployeeDetailBlService physicalEmployeeDetailBlService;
+        public PhysicalEmployeeDetailController(IPhysicalEmployeeDetailBlService physicalEmployeeDetailBlService)
         {
-            return new string[] { "value1", "value2" };
+            this.physicalEmployeeDetailBlService = physicalEmployeeDetailBlService;
         }
 
-        // GET api/<PhysicalEmployeeDetailController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<PhysicalEmployeeDetailDTO>>> GetAsync()
         {
-            return "value";
+            try
+            {
+                return Ok(await physicalEmployeeDetailBlService.GetAllAsync());
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    e.Message);
+            }
+        }
+
+        [HttpGet("{id:int}")]
+        public async Task<ActionResult<PhysicalEmployeeDetailDTO>> GetByIdAsync(int id)
+        {
+            try
+            {
+                var result = await physicalEmployeeDetailBlService.GetAsyncById(id);
+
+                if (result == null)
+                {
+                    return NotFound();
+                }
+
+                return result;
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    e.Message);
+            }
         }
 
         // POST api/<PhysicalEmployeeDetailController>
@@ -32,10 +59,25 @@ namespace UI.Controllers
         {
         }
 
-        // DELETE api/<PhysicalEmployeeDetailController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        [HttpDelete("{id:int}")]
+        public async Task<ActionResult<PhysicalEmployeeDetailDTO>> DeleteAsync(int id)
+
         {
+            try
+            {
+                var entityToDelete = await physicalEmployeeDetailBlService.GetAsyncById(id);
+
+                if (entityToDelete == null)
+                {
+                    return NotFound($"entity with Id = {id} not found");
+                }
+
+                return await physicalEmployeeDetailBlService.RemoveAsync(id);
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,e.Message);
+            }
         }
     }
 }

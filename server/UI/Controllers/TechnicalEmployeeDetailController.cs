@@ -1,25 +1,50 @@
-﻿using Microsoft.AspNetCore.Mvc;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+﻿using Services.ServicesImplementation;
 
 namespace UI.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("api/[controller]")]
     public class TechnicalEmployeeDetailController : ControllerBase
     {
-        // GET: api/<TechnicalEmployeeDetailController>
-        [HttpGet]
-        public IEnumerable<string> Get()
+        private readonly ITechnicalEmployeeDetailBlService technicalEmployeeDetailBlService;
+        public TechnicalEmployeeDetailController(ITechnicalEmployeeDetailBlService technicalEmployeeDetailBlService)
         {
-            return new string[] { "value1", "value2" };
+            this.technicalEmployeeDetailBlService = technicalEmployeeDetailBlService;
         }
 
-        // GET api/<TechnicalEmployeeDetailController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<TechnicalEmployeeDetailDTO>>> GetAsync()
         {
-            return "value";
+            try
+            {
+                return Ok(await technicalEmployeeDetailBlService.GetAllAsync());
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    e.Message);
+            }
+        }
+
+        [HttpGet("{id:int}")]
+        public async Task<ActionResult<TechnicalEmployeeDetailDTO>> GetByIdAsync(int id)
+        {
+            try
+            {
+                var result = await technicalEmployeeDetailBlService.GetAsyncById(id);
+
+                if (result == null)
+                {
+                    return NotFound();
+                }
+
+                return result;
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    e.Message);
+            }
         }
 
         // POST api/<TechnicalEmployeeDetailController>
@@ -34,10 +59,26 @@ namespace UI.Controllers
         {
         }
 
-        // DELETE api/<TechnicalEmployeeDetailController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        [HttpDelete("{id:int}")]
+        public async Task<ActionResult<TechnicalEmployeeDetailDTO>> DeleteAsync(int id)
+
         {
+            try
+            {
+                var entityToDelete = await technicalEmployeeDetailBlService.GetAsyncById(id);
+
+                if (entityToDelete == null)
+                {
+                    return NotFound($"entity with Id = {id} not found");
+                }
+
+                return await technicalEmployeeDetailBlService.RemoveAsync(id);
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    "Error deleting data");
+            }
         }
     }
 }

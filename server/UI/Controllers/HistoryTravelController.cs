@@ -1,41 +1,37 @@
-using Microsoft.AspNetCore.Mvc;
-using Services.DTO;
-using Services.ServicesApi;
 using Services.ServicesImplementation;
 
 namespace UI.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class HistoryTravelController : ControllerBase
     {
-        private readonly IHistoryTravelBlService _historyTravelBlService;
+        private readonly IHistoryTravelBlService historyTravelBlService;
         public HistoryTravelController(IHistoryTravelBlService historyTravelBlService)
         {
-            _historyTravelBlService = historyTravelBlService;
+            this.historyTravelBlService = historyTravelBlService;
         }
+
         [HttpGet]
-        public Task<IEnumerable<HistoryTravelDTO>> Get()
+        public async Task<ActionResult<IEnumerable<HistoryTravelDTO>>> GetAsync()
         {
             try
             {
-                return _historyTravelBlService.GetAllAsync();
+                return Ok(await historyTravelBlService.GetAllAsync());
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                //return StatusCode(StatusCodes.Status500InternalServerError,
-                //"Error retrieving data from the database");
-                return null;
-
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    e.Message);
             }
         }
  
         [HttpGet("{id:int}")]
-        public async Task<ActionResult<HistoryTravelDTO>> GetEmployee(int id)
+        public async Task<ActionResult<HistoryTravelDTO>> GetByIdAsync(int id)
         {
             try
             {
-                var result = await _historyTravelBlService.GetAsyncById(id);
+                var result = await historyTravelBlService.GetAsyncById(id);
 
                 if (result == null)
                 {
@@ -44,83 +40,75 @@ namespace UI.Controllers
 
                 return result;
             }
-            catch (Exception)
+            catch (Exception e)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError,
-                    "Error retrieving data from the database");
+                    e.Message);
             }
         }
-//    [HttpPost]
-//    public async Task<ActionResult<Employee>> CreateEmployee(Employee employee)
-//    {
-//        try
-//        {
-//            if (employee == null)
-//            {
-//                return BadRequest();
-//            }
 
-//            var emp = employeeRepository.GetEmployeeByEmail(employee.Email);
+        [HttpPost]
+        public async Task<ActionResult<DriverTemporaryLocationDTO>> CreateEmployee(HistoryTravelDTO entity)
+        {
+            try
+            {
+                if (entity == null)
+                {
+                    return BadRequest();
+                }
 
-//            if (emp != null)
-//            {
-//                ModelState.AddModelError("email", "Employee email already in use");
-//                return BadRequest(ModelState);
-//            }
+                var createdEntity = await historyTravelBlService.CreateAsync(entity);
 
-//            var createdEmployee = await employeeRepository.AddEmployee(employee);
+                return CreatedAtAction(nameof(GetByIdAsync), new { id = createdEntity.Id }, createdEntity);
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                   e.Message);
+            }
+        }
 
-//            return CreatedAtAction(nameof(GetEmployee), new { id = createdEmployee.EmployeeId },
-//                createdEmployee);
-//        }
-//        catch (Exception)
-//        {
-//            return StatusCode(StatusCodes.Status500InternalServerError,
-//                "Error retrieving data from the database");
-//        }
-//    }
+        //    [HttpPut("{id:int}")]
+        //    public async Task<ActionResult<Employee>> UpdateEmployee(int id, Employee employee)
+        //    {
+        //        try
+        //        {
+        //            if (id != employee.EmployeeId)
+        //            {
+        //                return BadRequest("Employee ID mismatch");
+        //            }
 
-//    [HttpPut("{id:int}")]
-//    public async Task<ActionResult<Employee>> UpdateEmployee(int id, Employee employee)
-//    {
-//        try
-//        {
-//            if (id != employee.EmployeeId)
-//            {
-//                return BadRequest("Employee ID mismatch");
-//            }
+        //            var employeeToUpdate = await employeeRepository.GetEmployee(id);
 
-//            var employeeToUpdate = await employeeRepository.GetEmployee(id);
+        //            if (employeeToUpdate == null)
+        //            {
+        //                return NotFound($"Employee with Id = {id} not found");
+        //            }
 
-//            if (employeeToUpdate == null)
-//            {
-//                return NotFound($"Employee with Id = {id} not found");
-//            }
-
-//            return await employeeRepository.UpdateEmployee(employee);
-//        }
-//        catch (Exception)
-//        {
-//            return StatusCode(StatusCodes.Status500InternalServerError,
-//                "Error updating data");
-//        }
-//    }
+        //            return await employeeRepository.UpdateEmployee(employee);
+        //        }
+        //        catch (Exception)
+        //        {
+        //            return StatusCode(StatusCodes.Status500InternalServerError,
+        //                "Error updating data");
+        //        }
+        //    }
 
         [HttpDelete("{id:int}")]
-        //public async Task<ActionResult<HistoryTravelDTO>> DeleteEmployee(int id)
-        public async Task<ActionResult<bool>> DeleteEmployee(int id)
+
+        public async Task<ActionResult<HistoryTravelDTO>> DeleteEmployee(int id)
 
         {
             try
             {
-                var employeeToDelete = await _historyTravelBlService.GetAsyncById(id);
+                var employeeToDelete = await historyTravelBlService.GetAsyncById(id);
 
                 if (employeeToDelete == null)
                 {
                     return NotFound($"Employee with Id = {id} not found");
                 }
 
-                return await _historyTravelBlService.RemoveAsync(id);
+                return await historyTravelBlService.RemoveAsync(id);
             }
             catch (Exception)
             {

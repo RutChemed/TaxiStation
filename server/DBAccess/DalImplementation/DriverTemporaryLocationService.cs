@@ -1,19 +1,22 @@
-﻿namespace DBAccess.DalImplementation
+﻿using Microsoft.EntityFrameworkCore;
+using System;
+
+namespace DBAccess.DalImplementation
 {
     public class DriverTemporaryLocationService : IDriverTemporaryLocationService
     {
         private readonly TaxiStationContext taxiStationContext;
         public DriverTemporaryLocationService(TaxiStationContext taxiStationContext)
         {
-                this.taxiStationContext = taxiStationContext;   
+                this.taxiStationContext = taxiStationContext;
         }
-        public async Task<bool> CreateAsync(DriverTemporaryLocation entity)
+        public async Task<DriverTemporaryLocation> CreateAsync(DriverTemporaryLocation entity)
         {
-
-            var result = await taxiStationContext.DriverTemporaryLocations.AddAsync(entity);
+            taxiStationContext.DriverTemporaryLocations.Add(entity);
             await taxiStationContext.SaveChangesAsync();
-            return true;
+            return entity;
         }
+       
         public async Task<IEnumerable<DriverTemporaryLocation>> GetAllAsync()
         {
             return await taxiStationContext.DriverTemporaryLocations.ToListAsync();
@@ -24,22 +27,21 @@
             return await taxiStationContext.DriverTemporaryLocations
                 .FirstOrDefaultAsync(e => e.Id == id);
         }
-
-        public async Task<bool> RemoveAsync(int id)
+        public async Task<DriverTemporaryLocation> RemoveAsync(int entityId)
         {
             var result = await taxiStationContext.DriverTemporaryLocations
-            .FirstOrDefaultAsync(e => e.Id == id);
+                .FirstOrDefaultAsync(e => e.Id == entityId);
             if (result != null)
             {
                 taxiStationContext.DriverTemporaryLocations.Remove(result);
                 await taxiStationContext.SaveChangesAsync();
-                return true;
+                return result;
             }
 
-            return false;
+            return null;
         }
 
-        public async Task<bool> UpdateAsync(DriverTemporaryLocation entity)
+    public async Task<bool> UpdateAsync(DriverTemporaryLocation entity)
         {
             var result = await taxiStationContext.DriverTemporaryLocations
                 .FirstOrDefaultAsync(e => e.Id == entity.Id);
@@ -56,7 +58,7 @@
                 return true;
             }
 
-            return true;
+            return false;
         }
     }
 }

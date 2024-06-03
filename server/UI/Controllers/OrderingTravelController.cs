@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Services.ServicesImplementation;
 
 namespace UI.Controllers
 {
@@ -7,19 +7,49 @@ namespace UI.Controllers
    
     public class OrderingTravelController : ControllerBase
     {
-        [HttpGet]
-        public IEnumerable<string> Get()
+        private readonly IOrderingTravelBlService orderingTravelBlService;
+
+        public OrderingTravelController(IOrderingTravelBlService orderingTravelBlService)
         {
-            return new string[] { "value1", "value2" };
-        }
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
+            this.orderingTravelBlService = orderingTravelBlService;
         }
 
-        // POST api/<ValuesController>
-        [HttpPost]
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<OrderingTravelDTO>>> GetAsync()
+        {
+            try
+            {
+                return Ok(await orderingTravelBlService.GetAllAsync());
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    e.Message);
+            }
+        }
+       
+        [HttpGet("{id:int}")]
+        public async Task<ActionResult<OrderingTravelDTO>> GetByIdAsync(int id)
+        {
+            try
+            {
+                var result = await orderingTravelBlService.GetAsyncById(id);
+
+                if (result == null)
+                {
+                    return NotFound();
+                }
+
+                return result;
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    e.Message);
+            }
+        }
+   
+            [HttpPost]
         public void Post([FromBody] string value)
         {
         }
@@ -30,10 +60,26 @@ namespace UI.Controllers
         {
         }
 
-        // DELETE api/<ValuesController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        [HttpDelete("{id:int}")]
+        public async Task<ActionResult<OrderingTravelDTO>> DeleteAsync(int id)
+
         {
+            try
+            {
+                var entityToDelete = await orderingTravelBlService.GetAsyncById(id);
+
+                if (entityToDelete == null)
+                {
+                    return NotFound($"entity with Id = {id} not found");
+                }
+
+                return await orderingTravelBlService.RemoveAsync(id);
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    "Error deleting data");
+            }
         }
     }
 }

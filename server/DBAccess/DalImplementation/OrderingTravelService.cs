@@ -1,18 +1,19 @@
-﻿namespace DBAccess.DalImplementation
+﻿using DBAccess.Models;
+
+namespace DBAccess.DalImplementation
 {
-    public class OrderingTravelService : IOrderingTravelService
+    public class OrderingTravelService:IOrderingTravelService
     {
         private readonly TaxiStationContext taxiStationContext;
         public OrderingTravelService(TaxiStationContext taxiStationContext)
         {
             this.taxiStationContext = taxiStationContext;
         }
-        public async Task<bool> CreateAsync(OrderingTravel entity)
+        public async Task<OrderingTravel> CreateAsync(OrderingTravel entity)
         {
-
-            var result = await taxiStationContext.OrderingTravels.AddAsync(entity);
+            taxiStationContext.OrderingTravels.Add(entity);
             await taxiStationContext.SaveChangesAsync();
-            return true;
+            return entity;
         }
         public async Task<IEnumerable<OrderingTravel>> GetAllAsync()
         {
@@ -25,18 +26,18 @@
                 .FirstOrDefaultAsync(e => e.Id == id);
         }
 
-        public async Task<bool> RemoveAsync(int id)
+        public async Task<OrderingTravel> RemoveAsync(int entityId)
         {
             var result = await taxiStationContext.OrderingTravels
-            .FirstOrDefaultAsync(e => e.Id == id);
+            .FirstOrDefaultAsync(e => e.Id == entityId);
             if (result != null)
             {
                 taxiStationContext.OrderingTravels.Remove(result);
                 await taxiStationContext.SaveChangesAsync();
-                return true;
+                return result;
             }
 
-            return false;
+            return null;
         }
 
         public async Task<bool> UpdateAsync(OrderingTravel entity)

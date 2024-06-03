@@ -9,10 +9,11 @@
             _mapper = mapper;
             _physicalEmployeeDetailService = physicalEmployeeDetailService;
         }
-        public async Task<bool> CreateAsync(PhysicalEmployeeDetailDTO entity)
+        public async Task<PhysicalEmployeeDetailDTO> CreateAsync(PhysicalEmployeeDetailDTO entity)
         {
-            PhysicalEmployeeDetail dalEntity = _mapper.Map<PhysicalEmployeeDetail>(entity);
-            return await _physicalEmployeeDetailService.CreateAsync(dalEntity);
+            var dalEntity = _mapper.Map<PhysicalEmployeeDetail>(entity);
+            var createdEntity = await _physicalEmployeeDetailService.CreateAsync(dalEntity);
+            return _mapper.Map<PhysicalEmployeeDetailDTO>(createdEntity);
         }
 
         public async Task<bool> UpdateAsync(PhysicalEmployeeDetailDTO entity)
@@ -21,11 +22,16 @@
             return await _physicalEmployeeDetailService.UpdateAsync(dalEntity);
         }
 
-        public async Task<bool> RemoveAsync(int id)
+        public async Task<PhysicalEmployeeDetailDTO> RemoveAsync(int id)
         {
-            return await _physicalEmployeeDetailService.RemoveAsync(id);
-        }
+            var deletedEntity = await _physicalEmployeeDetailService.RemoveAsync(id);
+            if (deletedEntity != null)
+            {
+                return _mapper.Map<PhysicalEmployeeDetailDTO>(deletedEntity);
+            }
 
+            return null;
+        }
         public async Task<IEnumerable<PhysicalEmployeeDetailDTO>> GetAllAsync()
         {
             IEnumerable<PhysicalEmployeeDetail> PhysicalEmployeeDetails = await _physicalEmployeeDetailService.GetAllAsync();

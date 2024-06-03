@@ -1,4 +1,7 @@
-﻿namespace Services.ServicesImplementation
+﻿using DBAccess.Models;
+using Services.DTO;
+
+namespace Services.ServicesImplementation
 {
     public class DriverTemporaryLocationBlService : IDriverTemporaryLocationBlService
     {
@@ -9,10 +12,11 @@
             _mapper = mapper;
             _driverTemporaryLocationService = driverTemporaryLocationService;
         }
-        public async Task<bool> CreateAsync(DriverTemporaryLocationDTO entity)
+        public async Task<DriverTemporaryLocationDTO> CreateAsync(DriverTemporaryLocationDTO entity)
         {
-            DriverTemporaryLocation dalEntity = _mapper.Map<DriverTemporaryLocation>(entity);
-            return await _driverTemporaryLocationService.CreateAsync(dalEntity);
+            var dalEntity = _mapper.Map<DriverTemporaryLocation>(entity);
+            var createdEntity = await _driverTemporaryLocationService.CreateAsync(dalEntity);
+            return _mapper.Map<DriverTemporaryLocationDTO>(createdEntity);
         }
 
         public async Task<bool> UpdateAsync(DriverTemporaryLocationDTO entity)
@@ -21,9 +25,15 @@
             return await _driverTemporaryLocationService.UpdateAsync(dalEntity);
         }
 
-        public async Task<bool> RemoveAsync(int id)
+        public async Task<DriverTemporaryLocationDTO> RemoveAsync(int id)
         {
-            return await _driverTemporaryLocationService.RemoveAsync(id);
+            var deletedEntity = await _driverTemporaryLocationService.RemoveAsync(id);
+            if (deletedEntity != null)
+            {
+                return _mapper.Map<DriverTemporaryLocationDTO>(deletedEntity);
+            }
+
+            return null;
         }
 
         public async Task<IEnumerable<DriverTemporaryLocationDTO>> GetAllAsync()

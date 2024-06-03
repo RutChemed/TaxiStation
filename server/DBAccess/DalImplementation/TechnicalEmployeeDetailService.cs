@@ -1,18 +1,18 @@
 ﻿namespace DBAccess.DalImplementation
 {
-    public class TechnicalEmployeeDetailService : ITechnicalEmployeeDetailService
+    public class TechnicalEmployeeDetailService:ITechnicalEmployeeDetailService
     {
         private readonly TaxiStationContext taxiStationContext;
         public TechnicalEmployeeDetailService(TaxiStationContext taxiStationContext)
         {
             this.taxiStationContext = taxiStationContext;
         }
-        public async Task<bool> CreateAsync(TechnicalEmployeeDetail entity)
-        {
 
-            var result = await taxiStationContext.TechnicalEmployeeDetails.AddAsync(entity);
+        public async Task<TechnicalEmployeeDetail> CreateAsync(TechnicalEmployeeDetail entity)
+        {
+            taxiStationContext.TechnicalEmployeeDetails.Add(entity);
             await taxiStationContext.SaveChangesAsync();
-            return true;
+            return entity;
         }
         public async Task<IEnumerable<TechnicalEmployeeDetail>> GetAllAsync()
         {
@@ -25,18 +25,18 @@
                 .FirstOrDefaultAsync(e => e.Id == id);
         }
 
-        public async Task<bool> RemoveAsync(int id)
+        public async Task<TechnicalEmployeeDetail> RemoveAsync(int entityId)
         {
             var result = await taxiStationContext.TechnicalEmployeeDetails
-            .FirstOrDefaultAsync(e => e.Id == id);
+            .FirstOrDefaultAsync(e => e.Id == entityId);
             if (result != null)
             {
                 taxiStationContext.TechnicalEmployeeDetails.Remove(result);
                 await taxiStationContext.SaveChangesAsync();
-                return true;
+                return result;
             }
 
-            return false;
+            return null;
         }
 
         public async Task<bool> UpdateAsync(TechnicalEmployeeDetail entity)

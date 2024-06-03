@@ -10,21 +10,28 @@
             _historyTravelService = historyTravelService;
 
         }
-        public async Task<bool> CreateAsync(HistoryTravelDTO entity)
+        public async Task<HistoryTravelDTO> CreateAsync(HistoryTravelDTO entity)
         {
-            HistoryTravel dalEntity = _mapper.Map<HistoryTravel>(entity);
-            return await _historyTravelService.CreateAsync(dalEntity);
+            var dalEntity = _mapper.Map<HistoryTravel>(entity);
+            var createdEntity = await _historyTravelService.CreateAsync(dalEntity);
+            return _mapper.Map<HistoryTravelDTO>(createdEntity);
         }
-
+            
         public async Task<bool> UpdateAsync(HistoryTravelDTO entity)
         {
             HistoryTravel dalEntity = _mapper.Map<HistoryTravel>(entity);
             return await _historyTravelService.UpdateAsync(dalEntity);
         }
 
-        public async Task<bool> RemoveAsync(int id)
+        public async Task<HistoryTravelDTO> RemoveAsync(int id)
         {
-            return await _historyTravelService.RemoveAsync(id);
+            var deletedEntity = await _historyTravelService.RemoveAsync(id);
+            if (deletedEntity != null)
+            {
+                return _mapper.Map<HistoryTravelDTO>(deletedEntity);
+            }
+
+            return null;
         }
 
         public async Task<IEnumerable<HistoryTravelDTO>> GetAllAsync()
