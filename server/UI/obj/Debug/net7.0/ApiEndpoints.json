@@ -21,7 +21,7 @@
   },
   {
     "ContainingType": "UI.Controllers.DriverTemporaryLocationController",
-    "Method": "CreateEmployee",
+    "Method": "CreateAsync",
     "RelativePath": "api/DriverTemporaryLocation",
     "HttpMethod": "POST",
     "IsController": true,
@@ -88,6 +88,37 @@
     "ReturnTypes": [
       {
         "Type": "Services.DTO.DriverTemporaryLocationDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UI.Controllers.DriverTemporaryLocationController",
+    "Method": "PutAsync",
+    "RelativePath": "api/DriverTemporaryLocation/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "entity",
+        "Type": "Services.DTO.DriverTemporaryLocationDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -217,22 +248,26 @@
   },
   {
     "ContainingType": "UI.Controllers.OrderingTravelController",
-    "Method": "Post",
+    "Method": "CreateEmployee",
     "RelativePath": "api/OrderingTravel",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "value",
-        "Type": "System.String",
+        "Name": "entity",
+        "Type": "Services.DTO.OrderingTravelDTO",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Void",
-        "MediaTypes": [],
+        "Type": "Services.DTO.OrderingTravelDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
         "StatusCode": 200
       }
     ]
@@ -360,6 +395,32 @@
   },
   {
     "ContainingType": "UI.Controllers.PhysicalEmployeeDetailController",
+    "Method": "CreateAsync",
+    "RelativePath": "api/PhysicalEmployeeDetail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "Services.DTO.PhysicalEmployeeDetailDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Services.DTO.PhysicalEmployeeDetailDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UI.Controllers.PhysicalEmployeeDetailController",
     "Method": "GetByIdAsync",
     "RelativePath": "api/PhysicalEmployeeDetail/{id}",
     "HttpMethod": "GET",
@@ -459,22 +520,26 @@
   },
   {
     "ContainingType": "UI.Controllers.TechnicalEmployeeDetailController",
-    "Method": "Post",
+    "Method": "CreateAsync",
     "RelativePath": "api/TechnicalEmployeeDetail",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "value",
-        "Type": "System.String",
+        "Name": "entity",
+        "Type": "Services.DTO.TechnicalEmployeeDetailDTO",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Void",
-        "MediaTypes": [],
+        "Type": "Services.DTO.TechnicalEmployeeDetailDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
         "StatusCode": 200
       }
     ]

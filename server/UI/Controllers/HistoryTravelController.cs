@@ -1,4 +1,5 @@
 using Services.ServicesImplementation;
+using UI.ApiController;
 
 namespace UI.Controllers
 {
@@ -7,9 +8,15 @@ namespace UI.Controllers
     public class HistoryTravelController : ControllerBase
     {
         private readonly IHistoryTravelBlService historyTravelBlService;
-        public HistoryTravelController(IHistoryTravelBlService historyTravelBlService)
+        private readonly ILogger<HistoryTravelController> logger;
+        private readonly IPhysicalEmployeeDetailController physicalEmployeeDetailController;
+
+
+        public HistoryTravelController(IHistoryTravelBlService historyTravelBlService, ILogger<HistoryTravelController> logger, IPhysicalEmployeeDetailController physicalEmployeeDetailController)
         {
             this.historyTravelBlService = historyTravelBlService;
+            this.logger = logger;
+            this.physicalEmployeeDetailController = physicalEmployeeDetailController;
         }
 
         [HttpGet]
@@ -25,7 +32,7 @@ namespace UI.Controllers
                     e.Message);
             }
         }
- 
+        [ActionName("GetByIdAsync")]
         [HttpGet("{id:int}")]
         public async Task<ActionResult<HistoryTravelDTO>> GetByIdAsync(int id)
         {
@@ -56,7 +63,12 @@ namespace UI.Controllers
                 {
                     return BadRequest();
                 }
+                var result = await physicalEmployeeDetailController.GetByIdAsync((int)entity.Driver);
 
+                if (result.Result is NotFoundResult)
+                {
+                    return UnprocessableEntity($"No driver was found with the requested foreign key");
+                }
                 var createdEntity = await historyTravelBlService.CreateAsync(entity);
 
                 return CreatedAtAction(nameof(GetByIdAsync), new { id = createdEntity.Id }, createdEntity);
@@ -67,7 +79,7 @@ namespace UI.Controllers
                    e.Message);
             }
         }
-
+     
         //    [HttpPut("{id:int}")]
         //    public async Task<ActionResult<Employee>> UpdateEmployee(int id, Employee employee)
         //    {
@@ -110,10 +122,10 @@ namespace UI.Controllers
 
                 return await historyTravelBlService.RemoveAsync(id);
             }
-            catch (Exception)
+            catch (Exception e)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError,
-                    "Error deleting data");
+                    e.Message);
             }
         }
 

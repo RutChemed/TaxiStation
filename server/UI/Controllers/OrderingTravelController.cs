@@ -1,4 +1,6 @@
-﻿using Services.ServicesImplementation;
+﻿using Microsoft.AspNetCore.Mvc;
+using Services.ServicesImplementation;
+using UI.ApiController;
 
 namespace UI.Controllers
 {
@@ -8,10 +10,14 @@ namespace UI.Controllers
     public class OrderingTravelController : ControllerBase
     {
         private readonly IOrderingTravelBlService orderingTravelBlService;
+        private readonly ILogger<OrderingTravelController> logger;
+        private readonly IPhysicalEmployeeDetailController physicalEmployeeDetailController;
 
-        public OrderingTravelController(IOrderingTravelBlService orderingTravelBlService)
+        public OrderingTravelController(IOrderingTravelBlService orderingTravelBlService, ILogger<OrderingTravelController> logger, IPhysicalEmployeeDetailController physicalEmployeeDetailController)
         {
             this.orderingTravelBlService = orderingTravelBlService;
+            this.logger = logger;
+            this.physicalEmployeeDetailController = physicalEmployeeDetailController;
         }
 
         [HttpGet]
@@ -48,13 +54,35 @@ namespace UI.Controllers
                     e.Message);
             }
         }
-   
-            [HttpPost]
-        public void Post([FromBody] string value)
+
+        [HttpPost]
+        public async Task<ActionResult<OrderingTravelDTO>> CreateEmployee(OrderingTravelDTO entity)
         {
+            try
+            {
+                if (entity == null)
+                {
+                    return BadRequest();
+                }
+                var result = await physicalEmployeeDetailController.GetByIdAsync((int)entity.Driver);
+
+                if (result.Result is NotFoundResult)
+                {
+                    return UnprocessableEntity($"No driver was found with the requested foreign key");
+                }
+                var createdEntity = await orderingTravelBlService.CreateAsync(entity);
+
+                return CreatedAtAction(nameof(GetByIdAsync), new { id = createdEntity.Id }, createdEntity);
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                   e.Message);
+            }
         }
 
         // PUT api/<ValuesController>/5
+        [ActionName("GetByIdAsync")]
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
         {
@@ -75,10 +103,10 @@ namespace UI.Controllers
 
                 return await orderingTravelBlService.RemoveAsync(id);
             }
-            catch (Exception)
+            catch (Exception e)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError,
-                    "Error deleting data");
+                    e.Message);
             }
         }
     }

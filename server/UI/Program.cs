@@ -1,3 +1,6 @@
+using UI.ApiController;
+using UI.Controllers;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -12,8 +15,12 @@ builder.Services.AddRepositories(connectionString);
 //Add services from BL layers
 builder.Services.AddServices();
 
+builder.Services.AddScoped<IPhysicalEmployeeDetailController, PhysicalEmployeeDetailController>();
+builder.Services.AddScoped<ITechnicalEmployeeDetailController, TechnicalEmployeeDetailController>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddLogging();
 
 //var provider = builder.Services.BuildServiceProvider();
 //var configuration = provider.GetRequiredService<IConfiguration>();

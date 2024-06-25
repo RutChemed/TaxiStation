@@ -91,3 +91,4 @@ C:\Users\user\Desktop\לסדר דחוף\TaxiStation\server\UI\obj\Debug\net7.0\U
 C:\Users\user\Desktop\לסדר דחוף\TaxiStation\server\UI\obj\Debug\net7.0\UI.dll
 C:\Users\user\Desktop\לסדר דחוף\TaxiStation\server\UI\obj\Debug\net7.0\refint\UI.dll
 C:\Users\user\Desktop\לסדר דחוף\TaxiStation\server\UI\obj\Debug\net7.0\UI.pdb
+C:\Users\user\Desktop\TaxiStation\server\UI\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

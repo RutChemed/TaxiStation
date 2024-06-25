@@ -1,4 +1,6 @@
-﻿using Services.DTO;
+﻿using Microsoft.AspNetCore.Http.HttpResults;
+using Services.DTO;
+using UI.ApiController;
 
 namespace UI.Controllers
 {
@@ -7,10 +9,14 @@ namespace UI.Controllers
     public class DriverTemporaryLocationController : ControllerBase
     {
         private readonly IDriverTemporaryLocationBlService driverTemporaryLocationBlService;
+        private readonly ILogger<DriverTemporaryLocationController> logger;
+        private readonly IPhysicalEmployeeDetailController physicalEmployeeDetailController;
 
-        public DriverTemporaryLocationController(IDriverTemporaryLocationBlService driverTemporaryLocationBlService)
+        public DriverTemporaryLocationController(IDriverTemporaryLocationBlService driverTemporaryLocationBlService, ILogger<DriverTemporaryLocationController> logger,IPhysicalEmployeeDetailController physicalEmployeeDetailController)
         {
             this.driverTemporaryLocationBlService = driverTemporaryLocationBlService;
+            this.logger = logger;
+            this.physicalEmployeeDetailController = physicalEmployeeDetailController;   
         }
 
         [HttpGet]
@@ -27,6 +33,7 @@ namespace UI.Controllers
             }
         }
 
+        [ActionName("GetByIdAsync")]
         [HttpGet("{id:int}")]
         public async Task<ActionResult<DriverTemporaryLocationDTO>> GetByIdAsync(int id)
         {
@@ -47,14 +54,21 @@ namespace UI.Controllers
                     e.Message);
             }
         }
+
         [HttpPost]
-        public async Task<ActionResult<DriverTemporaryLocationDTO>> CreateEmployee(DriverTemporaryLocationDTO entity)
+        public async Task<ActionResult<DriverTemporaryLocationDTO>> CreateAsync(DriverTemporaryLocationDTO entity)
         {
             try
             {
                 if (entity == null)
                 {
                     return BadRequest();
+                }
+                var result = await physicalEmployeeDetailController.GetByIdAsync((int)entity.Driver);
+
+                if (result.Result is NotFoundResult)
+                {
+                    return UnprocessableEntity($"No driver was found with the requested foreign key");
                 }
 
                 var createdEntity = await driverTemporaryLocationBlService.CreateAsync(entity);
@@ -67,7 +81,6 @@ namespace UI.Controllers
                    e.Message);
             }
         }
-
 
         [HttpDelete("{id:int}")]
         public async Task<ActionResult<DriverTemporaryLocationDTO>> DeleteAsync(int id)
@@ -84,37 +97,37 @@ namespace UI.Controllers
 
                 return await driverTemporaryLocationBlService.RemoveAsync(id);
             }
-            catch (Exception)
+            catch (Exception e)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError,
-                    "Error deleting data");
+                    e.Message);
             }
         }
+            [HttpPut("{id:int}")]
+            public async Task<ActionResult<bool>> PutAsync(int id, DriverTemporaryLocationDTO entity)
+            {
+                try
+                {
+                    if (id != entity.Id)
+                    {
+                        return BadRequest("entity ID mismatch");
+                    }
 
-        //[HttpPut("{id:int}")]
-        //public async Task<ActionResult<bool>> PutAsync(int id, DriverTemporaryLocationDTO entity)
-        //{
-        //    try
-        //    {
-        //        if (id != entity.Id)
-        //        {
-        //            return BadRequest("entity ID mismatch");
-        //        }
+                    var entityToUpdate = await driverTemporaryLocationBlService.GetAsyncById(id);
 
-        //        var entityToUpdate = await driverTemporaryLocationBlService.GetAsyncById(id);
+                    if (entityToUpdate == null)
+                    {
+                        return NotFound($"entity with Id = {id} not found");
+                    }
 
-        //        if (entityToUpdate == null)
-        //        {
-        //            return NotFound($"entity with Id = {id} not found");
-        //        }
-
-        //        return await driverTemporaryLocationBlService.UpdateAsync(entity);
-        //    }
-        //    catch (Exception)
-        //    {
-        //        return StatusCode(StatusCodes.Status500InternalServerError,
-        //            "Error updating data");
-        //    }
-        //}
-    }
+                    return await driverTemporaryLocationBlService.UpdateAsync(entity);
+                }
+                catch (Exception e)
+                {
+                    return StatusCode(StatusCodes.Status500InternalServerError,
+                        e.Message);
+                }
+            }
+        }
+    
 }

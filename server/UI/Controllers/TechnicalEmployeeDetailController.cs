@@ -1,15 +1,19 @@
 ﻿using Services.ServicesImplementation;
+using UI.ApiController;
 
 namespace UI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class TechnicalEmployeeDetailController : ControllerBase
+    public class TechnicalEmployeeDetailController : ControllerBase,ITechnicalEmployeeDetailController
     {
         private readonly ITechnicalEmployeeDetailBlService technicalEmployeeDetailBlService;
-        public TechnicalEmployeeDetailController(ITechnicalEmployeeDetailBlService technicalEmployeeDetailBlService)
+        private readonly ILogger<TechnicalEmployeeDetailController> logger;
+
+        public TechnicalEmployeeDetailController(ITechnicalEmployeeDetailBlService technicalEmployeeDetailBlService, ILogger<TechnicalEmployeeDetailController> logger)
         {
             this.technicalEmployeeDetailBlService = technicalEmployeeDetailBlService;
+            this.logger = logger;   
         }
 
         [HttpGet]
@@ -25,7 +29,7 @@ namespace UI.Controllers
                     e.Message);
             }
         }
-
+        [ActionName("GetByIdAsync")]
         [HttpGet("{id:int}")]
         public async Task<ActionResult<TechnicalEmployeeDetailDTO>> GetByIdAsync(int id)
         {
@@ -46,11 +50,25 @@ namespace UI.Controllers
                     e.Message);
             }
         }
-
-        // POST api/<TechnicalEmployeeDetailController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<ActionResult<TechnicalEmployeeDetailDTO>> CreateAsync(TechnicalEmployeeDetailDTO entity)
         {
+            try
+            {
+                if (entity == null)
+                {
+                    return BadRequest();
+                }
+
+                var createdEntity = await technicalEmployeeDetailBlService.CreateAsync(entity);
+
+                return CreatedAtAction(nameof(GetByIdAsync), new { id = createdEntity.Id }, createdEntity);
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                   e.Message);
+            }
         }
 
         // PUT api/<TechnicalEmployeeDetailController>/5
@@ -74,10 +92,10 @@ namespace UI.Controllers
 
                 return await technicalEmployeeDetailBlService.RemoveAsync(id);
             }
-            catch (Exception)
+            catch (Exception e)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError,
-                    "Error deleting data");
+                    e.Message   );
             }
         }
     }

@@ -1,15 +1,22 @@
-﻿using Services.ServicesImplementation;
+﻿using Microsoft.Extensions.Logging;
+using Services.ServicesImplementation;
+using UI.ApiController;
 
 namespace UI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class PhysicalEmployeeDetailController : ControllerBase
+    public class PhysicalEmployeeDetailController : ControllerBase,IPhysicalEmployeeDetailController
     {
         private readonly IPhysicalEmployeeDetailBlService physicalEmployeeDetailBlService;
-        public PhysicalEmployeeDetailController(IPhysicalEmployeeDetailBlService physicalEmployeeDetailBlService)
+        private readonly ILogger<PhysicalEmployeeDetailController> logger;
+        private readonly ITechnicalEmployeeDetailController technicalEmployeeDetailController;
+
+        public PhysicalEmployeeDetailController(IPhysicalEmployeeDetailBlService physicalEmployeeDetailBlService, ILogger<PhysicalEmployeeDetailController> logger,ITechnicalEmployeeDetailController technicalEmployeeDetailController)
         {
             this.physicalEmployeeDetailBlService = physicalEmployeeDetailBlService;
+            this.logger = logger; 
+            this.technicalEmployeeDetailController = technicalEmployeeDetailController;
         }
 
         [HttpGet]
@@ -25,19 +32,17 @@ namespace UI.Controllers
                     e.Message);
             }
         }
-
+        [ActionName("GetByIdAsync")]
         [HttpGet("{id:int}")]
         public async Task<ActionResult<PhysicalEmployeeDetailDTO>> GetByIdAsync(int id)
         {
             try
             {
                 var result = await physicalEmployeeDetailBlService.GetAsyncById(id);
-
                 if (result == null)
                 {
                     return NotFound();
                 }
-
                 return result;
             }
             catch (Exception e)
@@ -51,6 +56,32 @@ namespace UI.Controllers
         [HttpPost]
         public void Post([FromBody] string value)
         {
+        }
+        [HttpPost]
+        public async Task<ActionResult<PhysicalEmployeeDetailDTO>> CreateAsync(PhysicalEmployeeDetailDTO entity)
+        {
+            try
+            {
+                if (entity == null)
+                {
+                    return BadRequest();
+                }
+                var result = await technicalEmployeeDetailController.GetByIdAsync((int)entity.Employee);
+
+                if (result.Result is NotFoundResult)
+                {
+                    return UnprocessableEntity($"No driver was found with the requested foreign key");
+                }
+
+                var createdEntity = await physicalEmployeeDetailBlService.CreateAsync(entity);
+
+                return CreatedAtAction(nameof(GetByIdAsync), new { id = createdEntity.Id }, createdEntity);
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                   e.Message);
+            }
         }
 
         // PUT api/<PhysicalEmployeeDetailController>/5
