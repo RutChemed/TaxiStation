@@ -1,0 +1,24 @@
+.apply-driver {
+    text-align: center;
+    padding: 20px;
+    background-color: #e0f7fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.apply-driver h2 {
+    color: #2c3e50;
+}
+
+.apply-driver button {
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.apply-driver button:hover {
+    background-color: #0097a7;
+}

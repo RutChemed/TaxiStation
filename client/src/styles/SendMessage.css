@@ -1,0 +1,24 @@
+.send-massage {
+    text-align: center;
+    padding: 20px;
+    background-color: #e0f7fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.send-massage h2 {
+    color: #2c3e50;
+}
+
+.send-massage button {
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.send-massage button:hover {
+    background-color: #0097a7;
+}
