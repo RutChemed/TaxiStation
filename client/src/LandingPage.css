@@ -1,0 +1,187 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .landing-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 0 2rem;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 3rem 0;
+    background: linear-gradient(135deg, #ff8c00, #ffa500);
+    color: #fff;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem; 
+    font-weight: bold;
+    margin-bottom: 1rem;
+    animation: pulse 1.5s infinite;
+  }
+  
+  .header h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .order-btn, .login-btn {
+    background-color: #fff;
+    color: #ff8c00;
+    font-size: 1.2rem;
+    padding: 0.75rem 2rem;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    margin-left: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .order-btn:hover, .login-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .features {
+    margin: 3rem 0;
+  }
+  
+  .features ul {
+    list-style-type: none;
+    text-align: center;
+  }
+  
+  .features li {
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+    background: #fff;
+    border-radius: 10px;
+    margin: 1rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .apply-driver {
+    text-align: center;
+    margin: 3rem 0;
+  }
+  
+  .apply-driver h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #ff8c00;
+  }
+  
+  .apply-driver form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .apply-driver input[type="text"],
+  .apply-driver input[type="email"] {
+    width: 280px; 
+    padding: 0.5rem 1rem; 
+    margin: 0.5rem 0;
+    border: 2px solid #ff8c00;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+  }
+  
+  .apply-driver input[type="text"]:focus,
+  .apply-driver input[type="email"]:focus {
+    border-color: #ffa500;
+    outline: none;
+  }
+  
+  .file-upload {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 0.5rem 0;
+  }
+  
+  .file-upload input[type="file"] {
+    display: none;
+  }
+  
+  .icon {
+    margin-right: 0.5rem;
+    font-size: 1.5rem; 
+}
+  
+  .apply-btn {
+    background-color: #ff8c00;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.75rem 2rem;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .apply-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer a {
+    color: #ffa500;
+    text-decoration: none;
+    font-size: 1.1rem; 
+    transition: color 0.3s ease;
+    margin-left: 10px; 
+  }
+  
+  .footer a:hover {
+    color: #ff8c00;
+  }
+  
+  .canvas {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px; 
+  }   
+  .order-btn, .login-btn {
+    background-color: #fff;
+    color: #ff8c00;
+    font-size: 1.2rem;
+    padding: 0.75rem 2rem;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    margin-left: 1rem;
+    transition: transform 0.3s ease;
+    display: inline-block; /* הוספנו את ההגדרה הזו */
+  }
+  
+  .order-btn:hover, .login-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
