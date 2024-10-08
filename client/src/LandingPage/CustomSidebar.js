@@ -1,8 +1,8 @@
 import React from 'react';
 import { Sidebar as FlowbiteSidebar, TextInput, Label, Textarea, Button } from "flowbite-react";
 import { HiMail, HiInformationCircle, HiLogin, HiSearch, HiPaperClip, HiX } from "react-icons/hi";
+import { Link } from "react-router-dom"; 
 import './LandingStyle.css'; 
-import { Link } from "react-router-dom";
 
 function CustomSidebar({ showContactForm, onContactFormToggle, onClose }) {
   return (
@@ -14,22 +14,17 @@ function CustomSidebar({ showContactForm, onContactFormToggle, onClose }) {
         </button>
       </div>
       <div className="flex flex-col justify-between py-2">
-        {/* <form className="pb-3 md:hidden">
+        <form className="pb-3 md:hidden">
           <TextInput icon={HiSearch} type="search" placeholder="Search" required size={32} />
-        </form> */}
+        </form>
         <FlowbiteSidebar.Items>
           <FlowbiteSidebar.ItemGroup>
-            {/* <FlowbiteSidebar.Item href="/authentication/sign-in" icon={HiLogin}>
-              Sign in
-            </FlowbiteSidebar.Item> */}
-
-        
-<FlowbiteSidebar.Item href="/login" icon={HiLogin}>
-  Sign in
-</FlowbiteSidebar.Item>
-
-    
-
+          <FlowbiteSidebar.Item>
+              <Link to="/login" className="flex items-center">
+                <HiLogin className="mr-2" />
+                Sign in
+              </Link>
+            </FlowbiteSidebar.Item>
             <FlowbiteSidebar.Item href="https://github.com/themesberg/flowbite-react/issues" icon={HiInformationCircle}>
               Help
             </FlowbiteSidebar.Item>

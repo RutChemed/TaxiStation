@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import {jwtDecode} from 'jwt-decode'; // הייבוא הנכון
+import {jwtDecode} from 'jwt-decode'; 
 import { urlLogin } from '../endpoints';
+import { useNavigate } from 'react-router-dom'; 
 
 const LoginPage = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [role, setRole] = useState(null); // שמירת ה-role
+    const [role, setRole] = useState(null); 
+    const navigate = useNavigate(); 
 
     const handleLogin = async () => {
         try {
@@ -14,27 +16,19 @@ const LoginPage = () => {
                 email,
                 password
             });
-            
-            // שמירת הטוקן ב-localStorage
+
             const token = response.data.token;
             localStorage.setItem('token', token);
+            
+            const decodedToken = jwtDecode(token);
+            const userRole = decodedToken['http://schemas.microsoft.com/ws/2008/06/identity/claims/role'];
 
-            // פענוח הטוקן
-            const decodedToken = jwtDecode(token); // שימוש נכון ב-jwtDecode
+            setRole(userRole);
 
-            // שמירת ה-role מהטוקן
-            setRole(decodedToken.role);
-            console.log("Welcome, Driver       !",decodedToken.role);
-
-            // הפניית המשתמש לפי ה-role
-            if (decodedToken.role === 'manager') {
-                // הפניה לדף המנהל
-                console.log("Welcome, Manager!");
-                // Perform redirect or UI update
-            } else if (decodedToken.role === 'Driver') {
-                // הפניה לדף הנהג
-                console.log("Welcome, Driver!");
-                // Perform redirect or UI update
+            if (userRole === 'Manager') {
+                navigate('/manager-dashboard'); 
+            } else if (userRole === 'Driver') {
+                navigate('/driver-dashboard'); 
             }
         } catch (error) {
             console.error('Login failed', error);
@@ -57,7 +51,7 @@ const LoginPage = () => {
             />
             <button onClick={handleLogin}>Login</button>
 
-            {role && <p>Logged in as: {role}</p>} {/* הצגת ה-role */}
+            {role && <p>Logged in as: {role}</p>} 
         </div>
     );
 };
