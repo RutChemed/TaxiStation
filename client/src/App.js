@@ -1,9 +1,20 @@
-import LandingPage from "./LandingPage";
+import LandingPage from "./LandingPage/LandingPage";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Login from './components/LoginPage'; 
+
 const App = () => {
+
 
   return (
 <>
-                  <LandingPage></LandingPage>
+            <Router>
+              <Routes>
+              <Route path="/" element={<LandingPage />} /> 
+                <Route path="/login" element={<Login />} />
+                {/* Add more routes as needed */}
+              </Routes>
+            </Router>
+                  {/* <LandingPage></LandingPage> */}
                      {/* <BookRide />
                    <ApplyDriver />
                     <WorkSchedule />

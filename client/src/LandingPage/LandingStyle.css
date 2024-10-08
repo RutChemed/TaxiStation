@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +10,7 @@
     color: #333;
     line-height: 1.6;
   }
+
   
   .landing-page {
     display: flex;
@@ -178,10 +178,41 @@
     cursor: pointer;
     margin-left: 1rem;
     transition: transform 0.3s ease;
-    display: inline-block; /* הוספנו את ההגדרה הזו */
+    display: inline-block; 
   }
   
   .order-btn:hover, .login-btn:hover {
     transform: scale(1.1);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+.hamburger-icon {
+  position: absolute; /* Make it position absolute */
+  top: 20px; /* Adjust space from the top */
+  left: 50px; /* Adjust space from the left */
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+.hamburger-icon button {
+  font-size: 10rem; 
+}
+.sidebar {
+  background-color: transparent;
+  padding: 0; 
+  height: auto;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0; 
+}
+
+.sidebar-button {
+  background-color: transparent;
+  border: none;
+  padding: 0.5rem;
+}
+
+.flex-grow {
+  flex-grow: 1; 
 }
