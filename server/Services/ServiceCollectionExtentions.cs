@@ -12,11 +12,13 @@ namespace Services
             services.AddAutoMapper(typeof(HistoryTravelProfile));
             services.AddAutoMapper(typeof(DriverTemporaryLocationProfile));
 
+            services.AddTransient<IAuthService, AuthService>();
             services.AddTransient<IDriverTemporaryLocationBlService, DriverTemporaryLocationBlService>();
             services.AddTransient<IHistoryTravelBlService, HistoryTravelBlService>();
             services.AddTransient<IOrderingTravelBlService, OrderingTravelBlService>();
             services.AddTransient<ITechnicalEmployeeDetailBlService, TechnicalEmployeeDetailBlService>();
             services.AddTransient<IPhysicalEmployeeDetailBlService, PhysicalEmployeeDetailBlService>();
+
 
             return services;
         }

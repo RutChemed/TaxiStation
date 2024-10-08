@@ -1,5 +1,37 @@
 [
   {
+    "ContainingType": "UI.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Services.DTO.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UI.Controllers.CustomerController",
+    "Method": "BookRide",
+    "RelativePath": "api/Customer/book-ride",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderingTravel",
+        "Type": "DBAccess.Models.OrderingTravel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "UI.Controllers.DriverTemporaryLocationController",
     "Method": "GetAsync",
     "RelativePath": "api/DriverTemporaryLocation",
@@ -362,54 +394,6 @@
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.IEnumerable\u00601[[Services.DTO.PhysicalEmployeeDetailDTO, Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "UI.Controllers.PhysicalEmployeeDetailController",
-    "Method": "Post",
-    "RelativePath": "api/PhysicalEmployeeDetail",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "value",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "UI.Controllers.PhysicalEmployeeDetailController",
-    "Method": "CreateAsync",
-    "RelativePath": "api/PhysicalEmployeeDetail",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "entity",
-        "Type": "Services.DTO.PhysicalEmployeeDetailDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Services.DTO.PhysicalEmployeeDetailDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",

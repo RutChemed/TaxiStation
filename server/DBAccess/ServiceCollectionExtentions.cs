@@ -16,6 +16,12 @@ namespace DBAccess
             services.AddTransient<IOrderingTravelService, OrderingTravelService>();
             services.AddTransient<IHistoryTravelService, HistoryTravelService>();
             services.AddTransient<IDriverTemporaryLocationService, DriverTemporaryLocationService>();
+            services.AddTransient<IDriverRepository, DriverRepository>();
+            services.AddTransient<ICustomerRepository, CustomerRepository>();
+            services.AddTransient<IAdminRepository, AdminRepository>();
+            services.AddTransient<ILoginRepository, LoginRepository>();
+
+
 
             return services;
 

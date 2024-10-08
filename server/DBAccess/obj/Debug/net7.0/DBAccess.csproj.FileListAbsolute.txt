@@ -1,18 +1,3 @@
-C:\Users\user\Desktop\TaxiStation\server\DBAccess\bin\Debug\net7.0\DBAccess.deps.json
-C:\Users\user\Desktop\TaxiStation\server\DBAccess\bin\Debug\net7.0\DBAccess.dll
-C:\Users\user\Desktop\TaxiStation\server\DBAccess\bin\Debug\net7.0\DBAccess.pdb
-C:\Users\user\Desktop\TaxiStation\server\DBAccess\obj\Debug\net7.0\DBAccess.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\user\Desktop\TaxiStation\server\DBAccess\obj\Debug\net7.0\DBAccess.AssemblyInfoInputs.cache
-C:\Users\user\Desktop\TaxiStation\server\DBAccess\obj\Debug\net7.0\DBAccess.AssemblyInfo.cs
-C:\Users\user\Desktop\TaxiStation\server\DBAccess\obj\Debug\net7.0\DBAccess.csproj.CoreCompileInputs.cache
-C:\Users\user\Desktop\TaxiStation\server\DBAccess\obj\Debug\net7.0\DBAccess.sourcelink.json
-C:\Users\user\Desktop\TaxiStation\server\DBAccess\obj\Debug\net7.0\DBAccess.dll
-C:\Users\user\Desktop\TaxiStation\server\DBAccess\obj\Debug\net7.0\refint\DBAccess.dll
-C:\Users\user\Desktop\TaxiStation\server\DBAccess\obj\Debug\net7.0\DBAccess.pdb
-C:\Users\user\Desktop\TaxiStation\server\DBAccess\obj\Debug\net7.0\ref\DBAccess.dll
-C:\Users\user\Desktop\TaxiStation\server\DBAccess\bin\Debug\net7.0\DBAccess.runtimeconfig.json
-C:\Users\user\Desktop\TaxiStation\server\DBAccess\obj\Debug\net7.0\DBAccess.csproj.AssemblyReference.cache
-C:\Users\user\Desktop\TaxiStation\server\DBAccess\obj\Debug\net7.0\DBAccess.genruntimeconfig.cache
 C:\Users\user\Desktop\לסדר דחוף\TaxiStation\server\DBAccess\obj\Debug\net7.0\DBAccess.csproj.AssemblyReference.cache
 C:\Users\user\Desktop\לסדר דחוף\TaxiStation\server\DBAccess\obj\Debug\net7.0\DBAccess.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\user\Desktop\לסדר דחוף\TaxiStation\server\DBAccess\obj\Debug\net7.0\DBAccess.AssemblyInfoInputs.cache
@@ -22,3 +7,18 @@ C:\Users\user\Desktop\לסדר דחוף\TaxiStation\server\DBAccess\obj\Debug\ne
 C:\Users\user\Desktop\לסדר דחוף\TaxiStation\server\DBAccess\obj\Debug\net7.0\DBAccess.dll
 C:\Users\user\Desktop\לסדר דחוף\TaxiStation\server\DBAccess\obj\Debug\net7.0\refint\DBAccess.dll
 C:\Users\user\Desktop\לסדר דחוף\TaxiStation\server\DBAccess\obj\Debug\net7.0\DBAccess.pdb
+C:\Users\user\Desktop\TaxiStation\server\DBAccess\bin\Debug\net7.0\DBAccess.deps.json
+C:\Users\user\Desktop\TaxiStation\server\DBAccess\bin\Debug\net7.0\DBAccess.runtimeconfig.json
+C:\Users\user\Desktop\TaxiStation\server\DBAccess\bin\Debug\net7.0\DBAccess.dll
+C:\Users\user\Desktop\TaxiStation\server\DBAccess\bin\Debug\net7.0\DBAccess.pdb
+C:\Users\user\Desktop\TaxiStation\server\DBAccess\obj\Debug\net7.0\DBAccess.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\TaxiStation\server\DBAccess\obj\Debug\net7.0\DBAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\TaxiStation\server\DBAccess\obj\Debug\net7.0\DBAccess.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\TaxiStation\server\DBAccess\obj\Debug\net7.0\DBAccess.AssemblyInfo.cs
+C:\Users\user\Desktop\TaxiStation\server\DBAccess\obj\Debug\net7.0\DBAccess.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\TaxiStation\server\DBAccess\obj\Debug\net7.0\DBAccess.sourcelink.json
+C:\Users\user\Desktop\TaxiStation\server\DBAccess\obj\Debug\net7.0\DBAccess.dll
+C:\Users\user\Desktop\TaxiStation\server\DBAccess\obj\Debug\net7.0\refint\DBAccess.dll
+C:\Users\user\Desktop\TaxiStation\server\DBAccess\obj\Debug\net7.0\DBAccess.pdb
+C:\Users\user\Desktop\TaxiStation\server\DBAccess\obj\Debug\net7.0\DBAccess.genruntimeconfig.cache
+C:\Users\user\Desktop\TaxiStation\server\DBAccess\obj\Debug\net7.0\ref\DBAccess.dll

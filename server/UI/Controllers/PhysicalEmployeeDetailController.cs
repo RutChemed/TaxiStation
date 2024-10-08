@@ -53,36 +53,36 @@ namespace UI.Controllers
         }
 
         // POST api/<PhysicalEmployeeDetailController>
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
-        [HttpPost]
-        public async Task<ActionResult<PhysicalEmployeeDetailDTO>> CreateAsync(PhysicalEmployeeDetailDTO entity)
-        {
-            try
-            {
-                if (entity == null)
-                {
-                    return BadRequest();
-                }
-                var result = await technicalEmployeeDetailController.GetByIdAsync((int)entity.Employee);
+        //[HttpPost]
+        //public void Post([FromBody] string value)
+        //{
+        //}
+        //[HttpPost]
+        //public async Task<ActionResult<PhysicalEmployeeDetailDTO>> CreateAsync(PhysicalEmployeeDetailDTO entity)
+        //{
+        //    try
+        //    {
+        //        if (entity == null)
+        //        {
+        //            return BadRequest();
+        //        }
+        //        var result = await technicalEmployeeDetailController.GetByIdAsync((int)entity.Employee);
 
-                if (result.Result is NotFoundResult)
-                {
-                    return UnprocessableEntity($"No driver was found with the requested foreign key");
-                }
+        //        if (result.Result is NotFoundResult)
+        //        {
+        //            return UnprocessableEntity($"No driver was found with the requested foreign key");
+        //        }
 
-                var createdEntity = await physicalEmployeeDetailBlService.CreateAsync(entity);
+        //        var createdEntity = await physicalEmployeeDetailBlService.CreateAsync(entity);
 
-                return CreatedAtAction(nameof(GetByIdAsync), new { id = createdEntity.Id }, createdEntity);
-            }
-            catch (Exception e)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError,
-                   e.Message);
-            }
-        }
+        //        return CreatedAtAction(nameof(GetByIdAsync), new { id = createdEntity.Id }, createdEntity);
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        return StatusCode(StatusCodes.Status500InternalServerError,
+        //           e.Message);
+        //    }
+        //}
 
         // PUT api/<PhysicalEmployeeDetailController>/5
         [HttpPut("{id}")]

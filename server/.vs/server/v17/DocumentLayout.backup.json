@@ -1,0 +1,1382 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{56BB5083-3305-4D3C-B671-7E84836A689A}|UI\\UI.csproj|c:\\users\\user\\desktop\\taxistation\\server\\ui\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{56BB5083-3305-4D3C-B671-7E84836A689A}|UI\\UI.csproj|solutionrelative:ui\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56BB5083-3305-4D3C-B671-7E84836A689A}|UI\\UI.csproj|c:\\users\\user\\desktop\\taxistation\\server\\ui\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56BB5083-3305-4D3C-B671-7E84836A689A}|UI\\UI.csproj|solutionrelative:ui\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56BB5083-3305-4D3C-B671-7E84836A689A}|UI\\UI.csproj|c:\\users\\user\\desktop\\taxistation\\server\\ui\\controllers\\drivertemporarylocationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56BB5083-3305-4D3C-B671-7E84836A689A}|UI\\UI.csproj|solutionrelative:ui\\controllers\\drivertemporarylocationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_USER_DESKTOP_TAXISTATION_SERVER_DB_TAXISTATION.MDF/True/SqlTable/dbo.TechnicalEmployeeDetails.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|c:\\users\\user\\desktop\\taxistation\\server\\dbaccess\\servicecollectionextentions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|solutionrelative:dbaccess\\servicecollectionextentions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|c:\\users\\user\\desktop\\taxistation\\server\\services\\servicesimplementation\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|solutionrelative:services\\servicesimplementation\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56BB5083-3305-4D3C-B671-7E84836A689A}|UI\\UI.csproj|c:\\users\\user\\desktop\\taxistation\\server\\ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56BB5083-3305-4D3C-B671-7E84836A689A}|UI\\UI.csproj|solutionrelative:ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|c:\\users\\user\\desktop\\taxistation\\server\\dbaccess\\dalimplementation\\loginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|solutionrelative:dbaccess\\dalimplementation\\loginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|c:\\users\\user\\desktop\\taxistation\\server\\dbaccess\\dalapi\\iloginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|solutionrelative:dbaccess\\dalapi\\iloginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|c:\\users\\user\\desktop\\taxistation\\server\\services\\servicecollectionextentions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|solutionrelative:services\\servicecollectionextentions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\AppData\\Local\\Temp\\tgqgrc0i..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56BB5083-3305-4D3C-B671-7E84836A689A}|UI\\UI.csproj|c:\\users\\user\\desktop\\taxistation\\server\\ui\\globalusing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56BB5083-3305-4D3C-B671-7E84836A689A}|UI\\UI.csproj|solutionrelative:ui\\globalusing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|c:\\users\\user\\desktop\\taxistation\\server\\services\\servicesapi\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|solutionrelative:services\\servicesapi\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|c:\\users\\user\\desktop\\taxistation\\server\\services\\servicesimplementation\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|solutionrelative:services\\servicesimplementation\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|c:\\users\\user\\desktop\\taxistation\\server\\services\\servicesimplementation\\driverservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|solutionrelative:services\\servicesimplementation\\driverservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|c:\\users\\user\\desktop\\taxistation\\server\\services\\servicesapi\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|solutionrelative:services\\servicesapi\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|c:\\users\\user\\desktop\\taxistation\\server\\dbaccess\\dalapi\\ihistorytravelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|solutionrelative:dbaccess\\dalapi\\ihistorytravelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|c:\\users\\user\\desktop\\taxistation\\server\\dbaccess\\globalusing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|solutionrelative:dbaccess\\globalusing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|c:\\users\\user\\desktop\\taxistation\\server\\dbaccess\\dalimplementation\\historytravelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|solutionrelative:dbaccess\\dalimplementation\\historytravelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|c:\\users\\user\\desktop\\taxistation\\server\\dbaccess\\dalimplementation\\technicalemployeedetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|solutionrelative:dbaccess\\dalimplementation\\technicalemployeedetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|c:\\users\\user\\desktop\\taxistation\\server\\dbaccess\\dalapi\\iorderingtravelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|solutionrelative:dbaccess\\dalapi\\iorderingtravelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56BB5083-3305-4D3C-B671-7E84836A689A}|UI\\UI.csproj|c:\\users\\user\\desktop\\taxistation\\server\\ui\\controllers\\drivercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56BB5083-3305-4D3C-B671-7E84836A689A}|UI\\UI.csproj|solutionrelative:ui\\controllers\\drivercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|c:\\users\\user\\desktop\\taxistation\\server\\services\\servicesapi\\iblservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|solutionrelative:services\\servicesapi\\iblservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56BB5083-3305-4D3C-B671-7E84836A689A}|UI\\UI.csproj|c:\\users\\user\\desktop\\taxistation\\server\\ui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{56BB5083-3305-4D3C-B671-7E84836A689A}|UI\\UI.csproj|solutionrelative:ui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|c:\\users\\user\\desktop\\taxistation\\server\\services\\servicesimplementation\\technicalemployeedetailblservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|solutionrelative:services\\servicesimplementation\\technicalemployeedetailblservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|c:\\users\\user\\desktop\\taxistation\\server\\dbaccess\\dalimplementation\\driverrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|solutionrelative:dbaccess\\dalimplementation\\driverrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|c:\\users\\user\\desktop\\taxistation\\server\\services\\dto\\technicalemployeedetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|solutionrelative:services\\dto\\technicalemployeedetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|c:\\users\\user\\desktop\\taxistation\\server\\services\\dto\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|solutionrelative:services\\dto\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|c:\\users\\user\\desktop\\taxistation\\server\\dbaccess\\models\\technicalemployeedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|solutionrelative:dbaccess\\models\\technicalemployeedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56BB5083-3305-4D3C-B671-7E84836A689A}|UI\\UI.csproj|c:\\users\\user\\desktop\\taxistation\\server\\ui\\controllers\\technicalemployeedetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56BB5083-3305-4D3C-B671-7E84836A689A}|UI\\UI.csproj|solutionrelative:ui\\controllers\\technicalemployeedetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56BB5083-3305-4D3C-B671-7E84836A689A}|UI\\UI.csproj|c:\\users\\user\\desktop\\taxistation\\server\\ui\\apicontroller\\itechnicalemployeedetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56BB5083-3305-4D3C-B671-7E84836A689A}|UI\\UI.csproj|solutionrelative:ui\\apicontroller\\itechnicalemployeedetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|c:\\users\\user\\desktop\\taxistation\\server\\services\\dto\\orderingtraveldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|solutionrelative:services\\dto\\orderingtraveldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|c:\\users\\user\\desktop\\taxistation\\server\\services\\servicesimplementation\\orderingtravelblservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|solutionrelative:services\\servicesimplementation\\orderingtravelblservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56BB5083-3305-4D3C-B671-7E84836A689A}|UI\\UI.csproj|c:\\users\\user\\desktop\\taxistation\\server\\ui\\controllers\\physicalemployeedetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56BB5083-3305-4D3C-B671-7E84836A689A}|UI\\UI.csproj|solutionrelative:ui\\controllers\\physicalemployeedetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|c:\\users\\user\\desktop\\taxistation\\server\\services\\servicesapi\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|solutionrelative:services\\servicesapi\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_USER_DESKTOP_TAXISTATION_SERVER_DB_TAXISTATION.MDF/True/SqlTable/dbo.OrderingTravel.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|c:\\users\\user\\desktop\\taxistation\\server\\dbaccess\\dalimplementation\\drivertemporarylocationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|solutionrelative:dbaccess\\dalimplementation\\drivertemporarylocationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|c:\\users\\user\\desktop\\taxistation\\server\\services\\servicesimplementation\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|solutionrelative:services\\servicesimplementation\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|c:\\users\\user\\desktop\\taxistation\\server\\services\\servicesimplementation\\historytravelblservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|solutionrelative:services\\servicesimplementation\\historytravelblservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56BB5083-3305-4D3C-B671-7E84836A689A}|UI\\UI.csproj|c:\\users\\user\\desktop\\taxistation\\server\\ui\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56BB5083-3305-4D3C-B671-7E84836A689A}|UI\\UI.csproj|solutionrelative:ui\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|c:\\users\\user\\desktop\\taxistation\\server\\services\\servicesapi\\idriverservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|solutionrelative:services\\servicesapi\\idriverservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56BB5083-3305-4D3C-B671-7E84836A689A}|UI\\UI.csproj|c:\\users\\user\\desktop\\taxistation\\server\\ui\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56BB5083-3305-4D3C-B671-7E84836A689A}|UI\\UI.csproj|solutionrelative:ui\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56BB5083-3305-4D3C-B671-7E84836A689A}|UI\\UI.csproj|c:\\users\\user\\desktop\\taxistation\\server\\ui\\controllers\\historytravelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56BB5083-3305-4D3C-B671-7E84836A689A}|UI\\UI.csproj|solutionrelative:ui\\controllers\\historytravelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|c:\\users\\user\\desktop\\taxistation\\server\\dbaccess\\models\\taxistationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|solutionrelative:dbaccess\\models\\taxistationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56BB5083-3305-4D3C-B671-7E84836A689A}|UI\\UI.csproj|c:\\users\\user\\desktop\\taxistation\\server\\ui\\controllers\\orderingtravelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56BB5083-3305-4D3C-B671-7E84836A689A}|UI\\UI.csproj|solutionrelative:ui\\controllers\\orderingtravelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|c:\\users\\user\\desktop\\taxistation\\server\\services\\dto\\drivertemporarylocationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|solutionrelative:services\\dto\\drivertemporarylocationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|c:\\users\\user\\desktop\\taxistation\\server\\services\\servicesimplementation\\physicalemployeedetailblservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|solutionrelative:services\\servicesimplementation\\physicalemployeedetailblservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|c:\\users\\user\\desktop\\taxistation\\server\\services\\servicesimplementation\\drivertemporarylocationblservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|solutionrelative:services\\servicesimplementation\\drivertemporarylocationblservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|c:\\users\\user\\desktop\\taxistation\\server\\dbaccess\\dalimplementation\\physicalemployeedetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|solutionrelative:dbaccess\\dalimplementation\\physicalemployeedetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|c:\\users\\user\\desktop\\taxistation\\server\\dbaccess\\dalimplementation\\orderingtravelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|solutionrelative:dbaccess\\dalimplementation\\orderingtravelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|c:\\users\\user\\desktop\\taxistation\\server\\dbaccess\\dalapi\\icrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|solutionrelative:dbaccess\\dalapi\\icrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|c:\\users\\user\\desktop\\taxistation\\server\\services\\globalusing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|solutionrelative:services\\globalusing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|c:\\users\\user\\desktop\\taxistation\\server\\services\\dto\\physicalemployeedetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|solutionrelative:services\\dto\\physicalemployeedetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|c:\\users\\user\\desktop\\taxistation\\server\\services\\dto\\historytraveldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|solutionrelative:services\\dto\\historytraveldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|c:\\users\\user\\desktop\\taxistation\\server\\services\\servicesapi\\itechnicalemployeedetailblservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|solutionrelative:services\\servicesapi\\itechnicalemployeedetailblservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|c:\\users\\user\\desktop\\taxistation\\server\\services\\servicesapi\\iphysicalemployeedetailblservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|solutionrelative:services\\servicesapi\\iphysicalemployeedetailblservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|c:\\users\\user\\desktop\\taxistation\\server\\services\\servicesapi\\iorderingtravelblservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|solutionrelative:services\\servicesapi\\iorderingtravelblservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|c:\\users\\user\\desktop\\taxistation\\server\\services\\servicesapi\\idrivertemporarylocationblservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|solutionrelative:services\\servicesapi\\idrivertemporarylocationblservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|c:\\users\\user\\desktop\\taxistation\\server\\services\\profiles\\drivertemporarylocationprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|solutionrelative:services\\profiles\\drivertemporarylocationprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|c:\\users\\user\\desktop\\taxistation\\server\\services\\servicesapi\\ihistorytravelblservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|solutionrelative:services\\servicesapi\\ihistorytravelblservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|c:\\users\\user\\desktop\\taxistation\\server\\services\\profiles\\technicalemployeedetailprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|solutionrelative:services\\profiles\\technicalemployeedetailprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|c:\\users\\user\\desktop\\taxistation\\server\\services\\profiles\\historytravelprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|solutionrelative:services\\profiles\\historytravelprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|c:\\users\\user\\desktop\\taxistation\\server\\dbaccess\\dalapi\\itechnicalemployeedetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|solutionrelative:dbaccess\\dalapi\\itechnicalemployeedetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|c:\\users\\user\\desktop\\taxistation\\server\\dbaccess\\dalapi\\iphysicalemployeedetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|solutionrelative:dbaccess\\dalapi\\iphysicalemployeedetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|c:\\users\\user\\desktop\\taxistation\\server\\dbaccess\\dalapi\\idrivertemporarylocationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|solutionrelative:dbaccess\\dalapi\\idrivertemporarylocationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|c:\\users\\user\\desktop\\taxistation\\server\\dbaccess\\models\\drivertemporarylocation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|solutionrelative:dbaccess\\models\\drivertemporarylocation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|c:\\users\\user\\desktop\\taxistation\\server\\dbaccess\\models\\historytravel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|solutionrelative:dbaccess\\models\\historytravel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|c:\\users\\user\\desktop\\taxistation\\server\\dbaccess\\models\\orderingtravel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|solutionrelative:dbaccess\\models\\orderingtravel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|c:\\users\\user\\desktop\\taxistation\\server\\dbaccess\\dbaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|solutionrelative:dbaccess\\dbaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E1B12C0-3161-4699-B7C4-39D527EF927A}|UnitTest\\UnitTest.csproj|c:\\users\\user\\desktop\\taxistation\\server\\unittest\\daltest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E1B12C0-3161-4699-B7C4-39D527EF927A}|UnitTest\\UnitTest.csproj|solutionrelative:unittest\\daltest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|c:\\users\\user\\desktop\\taxistation\\server\\dbaccess\\dbaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|solutionrelative:dbaccess\\dbaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E1B12C0-3161-4699-B7C4-39D527EF927A}|UnitTest\\UnitTest.csproj|c:\\users\\user\\desktop\\taxistation\\server\\unittest\\unittest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7E1B12C0-3161-4699-B7C4-39D527EF927A}|UnitTest\\UnitTest.csproj|solutionrelative:unittest\\unittest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E1B12C0-3161-4699-B7C4-39D527EF927A}|UnitTest\\UnitTest.csproj|c:\\users\\user\\desktop\\taxistation\\server\\unittest\\unittest.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{7E1B12C0-3161-4699-B7C4-39D527EF927A}|UnitTest\\UnitTest.csproj|solutionrelative:unittest\\unittest.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|c:\\users\\user\\desktop\\taxistation\\server\\dbaccess\\models\\physicalemployeedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|solutionrelative:dbaccess\\models\\physicalemployeedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_USER_DESKTOP_TAXISTATION_SERVER_DB_TAXISTATION.MDF/True/SqlTable/dbo.HistoryTravel.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|c:\\users\\user\\desktop\\taxistation\\server\\services\\profiles\\physicalemployeedetailprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|solutionrelative:services\\profiles\\physicalemployeedetailprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|c:\\users\\user\\desktop\\taxistation\\server\\services\\profiles\\orderingtravelprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|solutionrelative:services\\profiles\\orderingtravelprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|c:\\users\\user\\desktop\\taxistation\\server\\dbaccess\\dbaccess.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{B49D1495-B943-4FAC-A3C3-582EDB1CE930}|DBAccess\\DBAccess.csproj|solutionrelative:dbaccess\\dbaccess.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_USER_DESKTOP_TAXISTATION_SERVER_DB_TAXISTATION.MDF/True/SqlTable/dbo.DriverTemporaryLocation.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|c:\\users\\user\\desktop\\taxistation\\server\\services\\services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CD679EA1-CCD8-4C59-8B6C-2AE5727CA5A2}|Services\\Services.csproj|solutionrelative:services\\services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\AppData\\Local\\Temp\\tgqgrc0i..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\AppData\\Local\\Temp\\tgqgrc0i..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|ResultFrame"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "dbo.TechnicalEmployeeDetails [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_USER_DESKTOP_TAXISTATION_SERVER_DB_TAXISTATION.MDF/True/SqlTable/dbo.TechnicalEmployeeDetails.sql",
+              "ToolTip": "dbo.TechnicalEmployeeDetails [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-10-08T14:30:25.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UI\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "UI\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UI\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "UI\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T21:14:21.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DriverTemporaryLocationController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UI\\Controllers\\DriverTemporaryLocationController.cs",
+              "RelativeDocumentMoniker": "UI\\Controllers\\DriverTemporaryLocationController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UI\\Controllers\\DriverTemporaryLocationController.cs",
+              "RelativeToolTip": "UI\\Controllers\\DriverTemporaryLocationController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T20:19:06.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UI\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "UI\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UI\\appsettings.Development.json*",
+              "RelativeToolTip": "UI\\appsettings.Development.json*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-13T21:52:55.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{28836128-fc2c-11d2-a433-00c04f72d18a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ServiceCollectionExtentions.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\ServiceCollectionExtentions.cs",
+              "RelativeDocumentMoniker": "DBAccess\\ServiceCollectionExtentions.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\ServiceCollectionExtentions.cs",
+              "RelativeToolTip": "DBAccess\\ServiceCollectionExtentions.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAYwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T21:57:02.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesImplementation\\AuthService.cs",
+              "RelativeDocumentMoniker": "Services\\ServicesImplementation\\AuthService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesImplementation\\AuthService.cs",
+              "RelativeToolTip": "Services\\ServicesImplementation\\AuthService.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAwDgAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T21:16:43.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UI\\Program.cs",
+              "RelativeDocumentMoniker": "UI\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UI\\Program.cs",
+              "RelativeToolTip": "UI\\Program.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAgwFQAAAByAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T21:53:01.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DalImplementation\\LoginRepository.cs",
+              "RelativeDocumentMoniker": "DBAccess\\DalImplementation\\LoginRepository.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DalImplementation\\LoginRepository.cs",
+              "RelativeToolTip": "DBAccess\\DalImplementation\\LoginRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T21:27:46.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ILoginRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DalApi\\ILoginRepository.cs",
+              "RelativeDocumentMoniker": "DBAccess\\DalApi\\ILoginRepository.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DalApi\\ILoginRepository.cs",
+              "RelativeToolTip": "DBAccess\\DalApi\\ILoginRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T21:28:57.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SQLQuery1.sql ",
+              "DocumentMoniker": "C:\\Users\\user\\AppData\\Local\\Temp\\tgqgrc0i..sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\tgqgrc0i..sql",
+              "ToolTip": "SQLQuery1.sql *",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-10-07T22:48:04.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ServiceCollectionExtentions.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServiceCollectionExtentions.cs",
+              "RelativeDocumentMoniker": "Services\\ServiceCollectionExtentions.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServiceCollectionExtentions.cs",
+              "RelativeToolTip": "Services\\ServiceCollectionExtentions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T20:24:01.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesImplementation\\CustomerService.cs",
+              "RelativeDocumentMoniker": "Services\\ServicesImplementation\\CustomerService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesImplementation\\CustomerService.cs",
+              "RelativeToolTip": "Services\\ServicesImplementation\\CustomerService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA1wA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T15:36:09.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesApi\\IAuthService.cs",
+              "RelativeDocumentMoniker": "Services\\ServicesApi\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesApi\\IAuthService.cs",
+              "RelativeToolTip": "Services\\ServicesApi\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T21:29:52.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GlobalUsing.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UI\\GlobalUsing.cs",
+              "RelativeDocumentMoniker": "UI\\GlobalUsing.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UI\\GlobalUsing.cs",
+              "RelativeToolTip": "UI\\GlobalUsing.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T12:43:39.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DriverService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesImplementation\\DriverService.cs",
+              "RelativeDocumentMoniker": "Services\\ServicesImplementation\\DriverService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesImplementation\\DriverService.cs",
+              "RelativeToolTip": "Services\\ServicesImplementation\\DriverService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T15:35:45.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IAdminService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesApi\\IAdminService.cs",
+              "RelativeDocumentMoniker": "Services\\ServicesApi\\IAdminService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesApi\\IAdminService.cs",
+              "RelativeToolTip": "Services\\ServicesApi\\IAdminService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T15:38:25.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IHistoryTravelService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DalApi\\IHistoryTravelService.cs",
+              "RelativeDocumentMoniker": "DBAccess\\DalApi\\IHistoryTravelService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DalApi\\IHistoryTravelService.cs",
+              "RelativeToolTip": "DBAccess\\DalApi\\IHistoryTravelService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T16:44:02.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "HistoryTravelService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DalImplementation\\HistoryTravelService.cs",
+              "RelativeDocumentMoniker": "DBAccess\\DalImplementation\\HistoryTravelService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DalImplementation\\HistoryTravelService.cs",
+              "RelativeToolTip": "DBAccess\\DalImplementation\\HistoryTravelService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T20:44:40.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "GlobalUsing.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\GlobalUsing.cs",
+              "RelativeDocumentMoniker": "DBAccess\\GlobalUsing.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\GlobalUsing.cs",
+              "RelativeToolTip": "DBAccess\\GlobalUsing.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T21:18:59.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "TechnicalEmployeeDetailService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DalImplementation\\TechnicalEmployeeDetailService.cs",
+              "RelativeDocumentMoniker": "DBAccess\\DalImplementation\\TechnicalEmployeeDetailService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DalImplementation\\TechnicalEmployeeDetailService.cs",
+              "RelativeToolTip": "DBAccess\\DalImplementation\\TechnicalEmployeeDetailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T20:44:49.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IOrderingTravelService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DalApi\\IOrderingTravelService.cs",
+              "RelativeDocumentMoniker": "DBAccess\\DalApi\\IOrderingTravelService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DalApi\\IOrderingTravelService.cs",
+              "RelativeToolTip": "DBAccess\\DalApi\\IOrderingTravelService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T20:42:11.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DriverController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UI\\Controllers\\DriverController.cs",
+              "RelativeDocumentMoniker": "UI\\Controllers\\DriverController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UI\\Controllers\\DriverController.cs",
+              "RelativeToolTip": "UI\\Controllers\\DriverController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T19:21:26.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IBlService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesApi\\IBlService.cs",
+              "RelativeDocumentMoniker": "Services\\ServicesApi\\IBlService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesApi\\IBlService.cs",
+              "RelativeToolTip": "Services\\ServicesApi\\IBlService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T20:27:53.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UI\\appsettings.json",
+              "RelativeDocumentMoniker": "UI\\appsettings.json",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UI\\appsettings.json",
+              "RelativeToolTip": "UI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-13T21:52:52.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "TechnicalEmployeeDetailBlService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesImplementation\\TechnicalEmployeeDetailBlService.cs",
+              "RelativeDocumentMoniker": "Services\\ServicesImplementation\\TechnicalEmployeeDetailBlService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesImplementation\\TechnicalEmployeeDetailBlService.cs",
+              "RelativeToolTip": "Services\\ServicesImplementation\\TechnicalEmployeeDetailBlService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T21:33:54.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "DriverRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DalImplementation\\DriverRepository.cs",
+              "RelativeDocumentMoniker": "DBAccess\\DalImplementation\\DriverRepository.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DalImplementation\\DriverRepository.cs",
+              "RelativeToolTip": "DBAccess\\DalImplementation\\DriverRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T20:34:25.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\DTO\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "Services\\DTO\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\DTO\\LoginRequest.cs",
+              "RelativeToolTip": "Services\\DTO\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T21:06:58.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "TechnicalEmployeeDetailDTO.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\DTO\\TechnicalEmployeeDetailDTO.cs",
+              "RelativeDocumentMoniker": "Services\\DTO\\TechnicalEmployeeDetailDTO.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\DTO\\TechnicalEmployeeDetailDTO.cs",
+              "RelativeToolTip": "Services\\DTO\\TechnicalEmployeeDetailDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T21:12:50.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "TechnicalEmployeeDetail.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\Models\\TechnicalEmployeeDetail.cs",
+              "RelativeDocumentMoniker": "DBAccess\\Models\\TechnicalEmployeeDetail.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\Models\\TechnicalEmployeeDetail.cs",
+              "RelativeToolTip": "DBAccess\\Models\\TechnicalEmployeeDetail.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAzwAUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T16:11:40.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ITechnicalEmployeeDetailController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UI\\ApiController\\ITechnicalEmployeeDetailController.cs",
+              "RelativeDocumentMoniker": "UI\\ApiController\\ITechnicalEmployeeDetailController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UI\\ApiController\\ITechnicalEmployeeDetailController.cs",
+              "RelativeToolTip": "UI\\ApiController\\ITechnicalEmployeeDetailController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T20:21:16.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "PhysicalEmployeeDetailController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UI\\Controllers\\PhysicalEmployeeDetailController.cs",
+              "RelativeDocumentMoniker": "UI\\Controllers\\PhysicalEmployeeDetailController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UI\\Controllers\\PhysicalEmployeeDetailController.cs",
+              "RelativeToolTip": "UI\\Controllers\\PhysicalEmployeeDetailController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T20:20:02.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "TechnicalEmployeeDetailController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UI\\Controllers\\TechnicalEmployeeDetailController.cs",
+              "RelativeDocumentMoniker": "UI\\Controllers\\TechnicalEmployeeDetailController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UI\\Controllers\\TechnicalEmployeeDetailController.cs",
+              "RelativeToolTip": "UI\\Controllers\\TechnicalEmployeeDetailController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwCUAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T20:19:41.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "OrderingTravelBlService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesImplementation\\OrderingTravelBlService.cs",
+              "RelativeDocumentMoniker": "Services\\ServicesImplementation\\OrderingTravelBlService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesImplementation\\OrderingTravelBlService.cs",
+              "RelativeToolTip": "Services\\ServicesImplementation\\OrderingTravelBlService.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwCoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T21:36:09.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "OrderingTravelDTO.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\DTO\\OrderingTravelDTO.cs",
+              "RelativeDocumentMoniker": "Services\\DTO\\OrderingTravelDTO.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\DTO\\OrderingTravelDTO.cs",
+              "RelativeToolTip": "Services\\DTO\\OrderingTravelDTO.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T21:13:44.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ICustomerService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesApi\\ICustomerService.cs",
+              "RelativeDocumentMoniker": "Services\\ServicesApi\\ICustomerService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesApi\\ICustomerService.cs",
+              "RelativeToolTip": "Services\\ServicesApi\\ICustomerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T15:38:00.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "DriverTemporaryLocationService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DalImplementation\\DriverTemporaryLocationService.cs",
+              "RelativeDocumentMoniker": "DBAccess\\DalImplementation\\DriverTemporaryLocationService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DalImplementation\\DriverTemporaryLocationService.cs",
+              "RelativeToolTip": "DBAccess\\DalImplementation\\DriverTemporaryLocationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T09:41:03.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "dbo.OrderingTravel.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_USER_DESKTOP_TAXISTATION_SERVER_DB_TAXISTATION.MDF/True/SqlTable/dbo.OrderingTravel.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_USER_DESKTOP_TAXISTATION_SERVER_DB_TAXISTATION.MDF/True/SqlTable/dbo.OrderingTravel.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-06-26T15:55:03.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "AdminService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesImplementation\\AdminService.cs",
+              "RelativeDocumentMoniker": "Services\\ServicesImplementation\\AdminService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesImplementation\\AdminService.cs",
+              "RelativeToolTip": "Services\\ServicesImplementation\\AdminService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T15:35:04.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "HistoryTravelBlService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesImplementation\\HistoryTravelBlService.cs",
+              "RelativeDocumentMoniker": "Services\\ServicesImplementation\\HistoryTravelBlService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesImplementation\\HistoryTravelBlService.cs",
+              "RelativeToolTip": "Services\\ServicesImplementation\\HistoryTravelBlService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T21:36:32.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UI\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "UI\\Controllers\\CustomerController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UI\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "UI\\Controllers\\CustomerController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwBMAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T19:21:07.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "IDriverService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesApi\\IDriverService.cs",
+              "RelativeDocumentMoniker": "Services\\ServicesApi\\IDriverService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesApi\\IDriverService.cs",
+              "RelativeToolTip": "Services\\ServicesApi\\IDriverService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T15:36:31.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UI\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "UI\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UI\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "UI\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T19:20:25.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "HistoryTravelController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UI\\Controllers\\HistoryTravelController.cs",
+              "RelativeDocumentMoniker": "UI\\Controllers\\HistoryTravelController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UI\\Controllers\\HistoryTravelController.cs",
+              "RelativeToolTip": "UI\\Controllers\\HistoryTravelController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAuwDEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T16:33:15.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "OrderingTravelController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UI\\Controllers\\OrderingTravelController.cs",
+              "RelativeDocumentMoniker": "UI\\Controllers\\OrderingTravelController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UI\\Controllers\\OrderingTravelController.cs",
+              "RelativeToolTip": "UI\\Controllers\\OrderingTravelController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAUwEQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T18:26:39.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "TaxiStationContext.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\Models\\TaxiStationContext.cs",
+              "RelativeDocumentMoniker": "DBAccess\\Models\\TaxiStationContext.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\Models\\TaxiStationContext.cs",
+              "RelativeToolTip": "DBAccess\\Models\\TaxiStationContext.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAApwA8AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T22:31:11.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "DriverTemporaryLocationDTO.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\DTO\\DriverTemporaryLocationDTO.cs",
+              "RelativeDocumentMoniker": "Services\\DTO\\DriverTemporaryLocationDTO.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\DTO\\DriverTemporaryLocationDTO.cs",
+              "RelativeToolTip": "Services\\DTO\\DriverTemporaryLocationDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T21:14:33.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "PhysicalEmployeeDetailBlService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesImplementation\\PhysicalEmployeeDetailBlService.cs",
+              "RelativeDocumentMoniker": "Services\\ServicesImplementation\\PhysicalEmployeeDetailBlService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesImplementation\\PhysicalEmployeeDetailBlService.cs",
+              "RelativeToolTip": "Services\\ServicesImplementation\\PhysicalEmployeeDetailBlService.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T21:35:44.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "DriverTemporaryLocationBlService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesImplementation\\DriverTemporaryLocationBlService.cs",
+              "RelativeDocumentMoniker": "Services\\ServicesImplementation\\DriverTemporaryLocationBlService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesImplementation\\DriverTemporaryLocationBlService.cs",
+              "RelativeToolTip": "Services\\ServicesImplementation\\DriverTemporaryLocationBlService.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAQwBsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T21:37:02.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "PhysicalEmployeeDetailService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DalImplementation\\PhysicalEmployeeDetailService.cs",
+              "RelativeDocumentMoniker": "DBAccess\\DalImplementation\\PhysicalEmployeeDetailService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DalImplementation\\PhysicalEmployeeDetailService.cs",
+              "RelativeToolTip": "DBAccess\\DalImplementation\\PhysicalEmployeeDetailService.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAA6wBoAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T20:44:47.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "OrderingTravelService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DalImplementation\\OrderingTravelService.cs",
+              "RelativeDocumentMoniker": "DBAccess\\DalImplementation\\OrderingTravelService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DalImplementation\\OrderingTravelService.cs",
+              "RelativeToolTip": "DBAccess\\DalImplementation\\OrderingTravelService.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAzwCgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T20:44:44.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "ICrud.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DalApi\\ICrud.cs",
+              "RelativeDocumentMoniker": "DBAccess\\DalApi\\ICrud.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DalApi\\ICrud.cs",
+              "RelativeToolTip": "DBAccess\\DalApi\\ICrud.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T16:43:59.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "GlobalUsing.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\GlobalUsing.cs",
+              "RelativeDocumentMoniker": "Services\\GlobalUsing.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\GlobalUsing.cs",
+              "RelativeToolTip": "Services\\GlobalUsing.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T20:36:25.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "PhysicalEmployeeDetailDTO.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\DTO\\PhysicalEmployeeDetailDTO.cs",
+              "RelativeDocumentMoniker": "Services\\DTO\\PhysicalEmployeeDetailDTO.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\DTO\\PhysicalEmployeeDetailDTO.cs",
+              "RelativeToolTip": "Services\\DTO\\PhysicalEmployeeDetailDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T21:13:19.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "HistoryTravelDTO.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\DTO\\HistoryTravelDTO.cs",
+              "RelativeDocumentMoniker": "Services\\DTO\\HistoryTravelDTO.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\DTO\\HistoryTravelDTO.cs",
+              "RelativeToolTip": "Services\\DTO\\HistoryTravelDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T21:14:09.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "ITechnicalEmployeeDetailBlService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesApi\\ITechnicalEmployeeDetailBlService.cs",
+              "RelativeDocumentMoniker": "Services\\ServicesApi\\ITechnicalEmployeeDetailBlService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesApi\\ITechnicalEmployeeDetailBlService.cs",
+              "RelativeToolTip": "Services\\ServicesApi\\ITechnicalEmployeeDetailBlService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T20:30:03.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "IPhysicalEmployeeDetailBlService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesApi\\IPhysicalEmployeeDetailBlService.cs",
+              "RelativeDocumentMoniker": "Services\\ServicesApi\\IPhysicalEmployeeDetailBlService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesApi\\IPhysicalEmployeeDetailBlService.cs",
+              "RelativeToolTip": "Services\\ServicesApi\\IPhysicalEmployeeDetailBlService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T20:30:26Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "IOrderingTravelBlService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesApi\\IOrderingTravelBlService.cs",
+              "RelativeDocumentMoniker": "Services\\ServicesApi\\IOrderingTravelBlService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesApi\\IOrderingTravelBlService.cs",
+              "RelativeToolTip": "Services\\ServicesApi\\IOrderingTravelBlService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T20:31:04.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "IDriverTemporaryLocationBlService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesApi\\IDriverTemporaryLocationBlService.cs",
+              "RelativeDocumentMoniker": "Services\\ServicesApi\\IDriverTemporaryLocationBlService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesApi\\IDriverTemporaryLocationBlService.cs",
+              "RelativeToolTip": "Services\\ServicesApi\\IDriverTemporaryLocationBlService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T20:28:39.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "DriverTemporaryLocationProfile.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\Profiles\\DriverTemporaryLocationProfile.cs",
+              "RelativeDocumentMoniker": "Services\\Profiles\\DriverTemporaryLocationProfile.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\Profiles\\DriverTemporaryLocationProfile.cs",
+              "RelativeToolTip": "Services\\Profiles\\DriverTemporaryLocationProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T20:35:39.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "IHistoryTravelBlService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesApi\\IHistoryTravelBlService.cs",
+              "RelativeDocumentMoniker": "Services\\ServicesApi\\IHistoryTravelBlService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\ServicesApi\\IHistoryTravelBlService.cs",
+              "RelativeToolTip": "Services\\ServicesApi\\IHistoryTravelBlService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T20:29:27.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "TechnicalEmployeeDetailProfile.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\Profiles\\TechnicalEmployeeDetailProfile.cs",
+              "RelativeDocumentMoniker": "Services\\Profiles\\TechnicalEmployeeDetailProfile.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\Profiles\\TechnicalEmployeeDetailProfile.cs",
+              "RelativeToolTip": "Services\\Profiles\\TechnicalEmployeeDetailProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T20:33:32.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "HistoryTravelProfile.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\Profiles\\HistoryTravelProfile.cs",
+              "RelativeDocumentMoniker": "Services\\Profiles\\HistoryTravelProfile.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\Profiles\\HistoryTravelProfile.cs",
+              "RelativeToolTip": "Services\\Profiles\\HistoryTravelProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T20:35:04.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "ITechnicalEmployeeDetailService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DalApi\\ITechnicalEmployeeDetailService.cs",
+              "RelativeDocumentMoniker": "DBAccess\\DalApi\\ITechnicalEmployeeDetailService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DalApi\\ITechnicalEmployeeDetailService.cs",
+              "RelativeToolTip": "DBAccess\\DalApi\\ITechnicalEmployeeDetailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T20:42:20.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "IPhysicalEmployeeDetailService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DalApi\\IPhysicalEmployeeDetailService.cs",
+              "RelativeDocumentMoniker": "DBAccess\\DalApi\\IPhysicalEmployeeDetailService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DalApi\\IPhysicalEmployeeDetailService.cs",
+              "RelativeToolTip": "DBAccess\\DalApi\\IPhysicalEmployeeDetailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T20:42:14.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "IDriverTemporaryLocationService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DalApi\\IDriverTemporaryLocationService.cs",
+              "RelativeDocumentMoniker": "DBAccess\\DalApi\\IDriverTemporaryLocationService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DalApi\\IDriverTemporaryLocationService.cs",
+              "RelativeToolTip": "DBAccess\\DalApi\\IDriverTemporaryLocationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T09:19:09.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "DriverTemporaryLocation.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\Models\\DriverTemporaryLocation.cs",
+              "RelativeDocumentMoniker": "DBAccess\\Models\\DriverTemporaryLocation.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\Models\\DriverTemporaryLocation.cs",
+              "RelativeToolTip": "DBAccess\\Models\\DriverTemporaryLocation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T14:10:10.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "HistoryTravel.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\Models\\HistoryTravel.cs",
+              "RelativeDocumentMoniker": "DBAccess\\Models\\HistoryTravel.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\Models\\HistoryTravel.cs",
+              "RelativeToolTip": "DBAccess\\Models\\HistoryTravel.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAkwBsAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T22:27:33.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "OrderingTravel.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\Models\\OrderingTravel.cs",
+              "RelativeDocumentMoniker": "DBAccess\\Models\\OrderingTravel.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\Models\\OrderingTravel.cs",
+              "RelativeToolTip": "DBAccess\\Models\\OrderingTravel.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAowBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T14:19:47.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "DBAccess.csproj",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DBAccess.csproj",
+              "RelativeDocumentMoniker": "DBAccess\\DBAccess.csproj",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DBAccess.csproj",
+              "RelativeToolTip": "DBAccess\\DBAccess.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-21T19:50:25.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "UnitTest.csproj",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UnitTest\\UnitTest.csproj",
+              "RelativeDocumentMoniker": "UnitTest\\UnitTest.csproj",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UnitTest\\UnitTest.csproj",
+              "RelativeToolTip": "UnitTest\\UnitTest.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-11T17:41:28.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "DBAction.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DBAction.cs",
+              "RelativeDocumentMoniker": "DBAccess\\DBAction.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DBAction.cs",
+              "RelativeToolTip": "DBAccess\\DBAction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T22:27:39.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "DalTest.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UnitTest\\DalTest.cs",
+              "RelativeDocumentMoniker": "UnitTest\\DalTest.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UnitTest\\DalTest.cs",
+              "RelativeToolTip": "UnitTest\\DalTest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T17:40:18.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "UnitTest",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UnitTest\\UnitTest.csproj",
+              "RelativeDocumentMoniker": "UnitTest\\UnitTest.csproj",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UnitTest\\UnitTest.csproj",
+              "RelativeToolTip": "UnitTest\\UnitTest.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-01T08:31:51.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "PhysicalEmployeeDetail.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\Models\\PhysicalEmployeeDetail.cs",
+              "RelativeDocumentMoniker": "DBAccess\\Models\\PhysicalEmployeeDetail.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\Models\\PhysicalEmployeeDetail.cs",
+              "RelativeToolTip": "DBAccess\\Models\\PhysicalEmployeeDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T14:29:05.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "dbo.HistoryTravel.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_USER_DESKTOP_TAXISTATION_SERVER_DB_TAXISTATION.MDF/True/SqlTable/dbo.HistoryTravel.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_USER_DESKTOP_TAXISTATION_SERVER_DB_TAXISTATION.MDF/True/SqlTable/dbo.HistoryTravel.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-03-28T18:34:09.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "PhysicalEmployeeDetailProfile.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\Profiles\\PhysicalEmployeeDetailProfile.cs",
+              "RelativeDocumentMoniker": "Services\\Profiles\\PhysicalEmployeeDetailProfile.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\Profiles\\PhysicalEmployeeDetailProfile.cs",
+              "RelativeToolTip": "Services\\Profiles\\PhysicalEmployeeDetailProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T20:34:03.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "OrderingTravelProfile.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\Profiles\\OrderingTravelProfile.cs",
+              "RelativeDocumentMoniker": "Services\\Profiles\\OrderingTravelProfile.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\Profiles\\OrderingTravelProfile.cs",
+              "RelativeToolTip": "Services\\Profiles\\OrderingTravelProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T20:34:24.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "DBAccess",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DBAccess.csproj",
+              "RelativeDocumentMoniker": "DBAccess\\DBAccess.csproj",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DBAccess.csproj",
+              "RelativeToolTip": "DBAccess\\DBAccess.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-21T20:13:34.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "dbo.DriverTemporaryLocation.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_USER_DESKTOP_TAXISTATION_SERVER_DB_TAXISTATION.MDF/True/SqlTable/dbo.DriverTemporaryLocation.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_USER_DESKTOP_TAXISTATION_SERVER_DB_TAXISTATION.MDF/True/SqlTable/dbo.DriverTemporaryLocation.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-03-17T09:50:53.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "Services.csproj",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\Services.csproj",
+              "RelativeDocumentMoniker": "Services\\Services.csproj",
+              "ToolTip": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\Services.csproj",
+              "RelativeToolTip": "Services\\Services.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-11T20:22:47.212Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
