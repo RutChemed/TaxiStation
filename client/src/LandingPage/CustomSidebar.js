@@ -1,10 +1,33 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react'; // הוספת useEffect
 import { Sidebar as FlowbiteSidebar, TextInput, Label, Textarea, Button } from "flowbite-react";
-import { HiMail, HiInformationCircle, HiLogin, HiSearch, HiPaperClip, HiX } from "react-icons/hi";
+import { HiMail, HiInformationCircle, HiLogin, HiLogout, HiSearch, HiPaperClip, HiX, HiChat, HiUserRemove, HiUserAdd, HiUserGroup, HiPencilAlt } from "react-icons/hi"; // ייבוא האייקונים המתאימים
 import { Link } from "react-router-dom"; 
-import './LandingStyle.css'; 
+import {jwtDecode} from 'jwt-decode'; // ייבוא jwtDecode
+import './LandingStyle.css';
+import LoginModal from './LoginModal'; 
 
 function CustomSidebar({ showContactForm, onContactFormToggle, onClose }) {
+  const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
+  const [role, setRole] = useState(null); // ניהול הסטייט של התפקיד
+
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    if (token) {
+      const decodedToken = jwtDecode(token);
+      const userRole = decodedToken['http://schemas.microsoft.com/ws/2008/06/identity/claims/role'];
+      setRole(userRole); // הגדרת התפקיד לסטייט
+    }
+  }, []); // ריצה פעם אחת בעת טעינת הקומפוננטה
+
+  const toggleLoginModal = () => {
+    setIsLoginModalOpen(!isLoginModalOpen);
+  };
+
+  const handleLogout = () => {
+    localStorage.removeItem('token'); 
+    setRole(null); // ניתוק התפקיד
+  };
+
   return (
     <FlowbiteSidebar aria-label="Sidebar" className="sidebar">
       <div className="sidebar-header">
@@ -19,14 +42,57 @@ function CustomSidebar({ showContactForm, onContactFormToggle, onClose }) {
         </form>
         <FlowbiteSidebar.Items>
           <FlowbiteSidebar.ItemGroup>
-          <FlowbiteSidebar.Item>
-              <Link to="/login" className="flex items-center">
-                <HiLogin className="mr-2" />
+            <FlowbiteSidebar.Item onClick={toggleLoginModal} icon={HiLogin}>
+              <div className="flex items-center cursor-pointer">
                 Sign in
-              </Link>
+              </div>
             </FlowbiteSidebar.Item>
+
+            {role === 'Manager' && ( // הצגת הקישורים רק אם התפקיד הוא מנהל
+              <>
+                <FlowbiteSidebar.Item icon={HiChat}>
+                  <Link to="/sendMessage">Send Message</Link>
+                </FlowbiteSidebar.Item>
+                <FlowbiteSidebar.Item icon={HiUserRemove}>
+                  <Link to="/fireDriver">Fire Driver</Link>
+                </FlowbiteSidebar.Item>
+                <FlowbiteSidebar.Item icon={HiPencilAlt}>
+                  <Link to="/EditManager">Edit Manager</Link>
+                </FlowbiteSidebar.Item>
+                <FlowbiteSidebar.Item icon={HiUserGroup}>
+                  <Link to="/driversInfo">Drivers Info</Link>
+                </FlowbiteSidebar.Item>
+                <FlowbiteSidebar.Item icon={HiUserAdd}>
+                  <Link to="/addDriver">Add Driver</Link>
+                </FlowbiteSidebar.Item>
+              </>
+            )}
+
+            {role === 'Driver' && ( // הצגת הקישורים רק אם התפקיד הוא נהג
+              <>
+                <FlowbiteSidebar.Item icon={HiChat}>
+                  <Link to="/status-toggle">Driver Status</Link>
+                </FlowbiteSidebar.Item>
+                <FlowbiteSidebar.Item icon={HiUserRemove}>
+                  <Link to="/edit-profile">Edit Profile</Link>
+                </FlowbiteSidebar.Item>
+                <FlowbiteSidebar.Item icon={HiPencilAlt}>
+                  <Link to="/transfer-ride">Transfer Ride</Link>
+                </FlowbiteSidebar.Item>
+                <FlowbiteSidebar.Item icon={HiUserGroup}>
+                  <Link to="/work-schedule">Work Schedule</Link>
+                </FlowbiteSidebar.Item>
+                <FlowbiteSidebar.Item icon={HiUserAdd}>
+                  <Link to="/dashboard">Dashboard</Link>
+                </FlowbiteSidebar.Item>
+              </>
+            )}
+
             <FlowbiteSidebar.Item href="https://github.com/themesberg/flowbite-react/issues" icon={HiInformationCircle}>
               Help
+            </FlowbiteSidebar.Item>
+            <FlowbiteSidebar.Item href="#" icon={HiLogout} onClick={handleLogout}>
+              Sign out
             </FlowbiteSidebar.Item>
             <FlowbiteSidebar.Item href="#" icon={HiMail} onClick={onContactFormToggle}>
               Contact Us
@@ -57,7 +123,7 @@ function CustomSidebar({ showContactForm, onContactFormToggle, onClose }) {
                 className="hidden" 
               />
               <label htmlFor="file">
-                <Button className="">
+                <Button className="flex items-center">
                   <HiPaperClip className="mr-2" /> Attach a file
                 </Button>
               </label>
@@ -68,6 +134,8 @@ function CustomSidebar({ showContactForm, onContactFormToggle, onClose }) {
           </form>
         )}
       </div>
+
+      {isLoginModalOpen && <LoginModal onClose={toggleLoginModal} setRole={setRole} />} {/* שליחת התפקיד לאחר התחברות */}
     </FlowbiteSidebar>
   );
 }

@@ -18,6 +18,8 @@ function LandingPage() {
     setIsOpen(!isOpen);
   };
 
+  const [role, setRole] = useState(null);
+
   return (
     <div className="landing-page">
       <Header isOpen={isOpen} onDrawerToggle={handleDrawerToggle} />
@@ -38,7 +40,7 @@ function LandingPage() {
       </footer>
 
       <Drawer open={isOpen} onClose={handleClose}>
-      <CustomSidebar showContactForm={showContactForm} onContactFormToggle={() => setShowContactForm(!showContactForm)} onClose={handleClose} />      </Drawer>
+      <CustomSidebar role={role} setRole={setRole} showContactForm={showContactForm} onContactFormToggle={() => setShowContactForm(!showContactForm)} onClose={handleClose} />      </Drawer>
     </div>
   );
 }
