@@ -11,7 +11,7 @@ namespace Services
             services.AddAutoMapper(typeof(OrderingTravelProfile));
             services.AddAutoMapper(typeof(HistoryTravelProfile));
             services.AddAutoMapper(typeof(DriverTemporaryLocationProfile));
-
+            services.AddTransient<IEmailService, EmailService>();
             services.AddTransient<IAuthService, AuthService>();
             services.AddTransient<IDriverTemporaryLocationBlService, DriverTemporaryLocationBlService>();
             services.AddTransient<IHistoryTravelBlService, HistoryTravelBlService>();

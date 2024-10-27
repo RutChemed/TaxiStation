@@ -12,6 +12,6 @@ namespace Services.Models
         public string To { get; set; } = "expresstaxi10@gmail.com";
         public string Subject { get; set; }
         public string Body { get; set; }
-        public List<string> Attachments { get; set; } = new List<string>();
+        public List<string> Attachments { get; set; }
     }
 }

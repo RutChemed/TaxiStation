@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DBAccess")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7744ae199aa920031fa5455184c676b34a9778c4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f755ed8c8f5341756e6609ea551cf7a4f524fae7")]
 [assembly: System.Reflection.AssemblyProductAttribute("DBAccess")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DBAccess")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

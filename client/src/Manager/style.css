@@ -10,8 +10,7 @@
 }
 
 form {
-    background-color:#FF4500; 
-    padding: 2rem;
+    background-color: #ff5722; 
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     width: 90%;
@@ -60,7 +59,6 @@ button:hover {
 }
 
 @media (max-width: 600px) {
-    
     form {
         padding: 1rem;
     }

@@ -2,11 +2,11 @@ import { HiX } from "react-icons/hi";
 import './LoginModal.css';
 import React, { useState } from 'react';
 import axios from 'axios';
-import {jwtDecode} from 'jwt-decode'; // תקן את הייבוא ל-jwtDecode
+import {jwtDecode} from 'jwt-decode'; 
 import { urlLogin } from '../endpoints';
 import { useNavigate } from 'react-router-dom'; 
 
-function LoginModal({ onClose, setRole }) { // נוסיף setRole בפרופס
+function LoginModal({ onClose, setRole,setShowReRegisterMessage ,setIsLoggedIn }) { 
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -29,17 +29,12 @@ function LoginModal({ onClose, setRole }) { // נוסיף setRole בפרופס
           localStorage.setItem('token', token);
           localStorage.setItem('userRole', userRole); 
 
-          setRole(userRole); // עדכון ה-role ב-Sidebar דרך הפרופס
-
-          if (userRole === 'Manager') {
-              // navigate('/manager-dashboard'); 
-              console.log("Manager")
-          } else if (userRole === 'Driver') {
-              // navigate('/driver-dashboard'); 
-              console.log("Driver")
-          }
+          setRole(userRole); 
+          setShowReRegisterMessage(false);
+          setIsLoggedIn(true);
+          onClose();
       } catch (error) {
-          setErrorMessage('The username or password is incorrect'); // הצגת הודעת השגיאה
+          setErrorMessage('The username or password is incorrect'); 
           console.error('Login failed', error);
       }
   };
@@ -53,7 +48,7 @@ function LoginModal({ onClose, setRole }) { // נוסיף setRole בפרופס
           </div>
         </button>
         <h2 className="modal-title">Login</h2>
-        {errorMessage && <p className="error-message">{errorMessage}</p>} {/* הצגת הודעת שגיאה */}
+        {errorMessage && <p className="error-message">{errorMessage}</p>} 
         <form className="modal-form" onSubmit={handleLogin}>
           <label htmlFor="email">Email</label>
           <input type="email" id="email" name="email" placeholder="name@company.com" value={email}
@@ -63,7 +58,7 @@ function LoginModal({ onClose, setRole }) { // נוסיף setRole בפרופס
           <input type="password" id="password" name="password" placeholder="Enter your password" required value={password}
           onChange={(e) => setPassword(e.target.value)} />
           
-          <button type="submit" className="modal-submit-btn">Sign In</button>
+          <button type="submit" className="modal-submit-btn" >Sign In</button>
         </form>
       </div>
     </div>

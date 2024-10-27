@@ -44,12 +44,6 @@ namespace Services.ServicesImplementation
         private string GenerateJwtToken(TechnicalEmployeeDetailDTO user)
         {
 
-//            var claims = new List<Claim>
-//{
-//    new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
-//    new Claim(ClaimTypes.Email, user.Email),
-//};
-
             var claims = new List<Claim>
         {
                     new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
@@ -63,7 +57,7 @@ namespace Services.ServicesImplementation
                 issuer: "MyAwesomeAppUsers",
                 audience: "MyAwesomeApp",
                 claims: claims,
-                expires: DateTime.UtcNow.AddMinutes(1), // Token expiration time
+                expires: DateTime.UtcNow.AddDays(7), // Token expiration time
                 signingCredentials: new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes("mySuperSecretKey123456789012345678"))
                  ,   SecurityAlgorithms.HmacSha256)
             );

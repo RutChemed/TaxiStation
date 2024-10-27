@@ -73,8 +73,18 @@ namespace UI.Controllers
 
         // PUT api/<TechnicalEmployeeDetailController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async Task<IActionResult> Put(int id, [FromBody] TechnicalEmployeeDetailDTO value)
         {
+            var result = await technicalEmployeeDetailBlService.UpdateAsync(value);
+
+            if (result)
+            {
+                return NoContent();
+            }
+            else
+            {
+                return NotFound();
+            }
         }
 
         [HttpDelete("{id:int}")]
