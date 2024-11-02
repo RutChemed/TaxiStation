@@ -43,5 +43,11 @@
             PhysicalEmployeeDetail? PhysicalEmployeeDetail = await _physicalEmployeeDetailService.GetAsyncById(id);
             return _mapper.Map<PhysicalEmployeeDetailDTO>(PhysicalEmployeeDetail);
         }
+
+        public async Task<PhysicalEmployeeDetailDTO?> GetAsyncByEmployee(int id)
+        {
+            PhysicalEmployeeDetail? PhysicalEmployeeDetail = await _physicalEmployeeDetailService.GetAsyncByEmployee(id);
+            return _mapper.Map<PhysicalEmployeeDetailDTO>(PhysicalEmployeeDetail);
+        }
     }
 }

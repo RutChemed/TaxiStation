@@ -7,5 +7,12 @@ export const urlSendEmail = `${baseURL}/Email/send-email`
 export const urlGetTechnicalDriverDetails = `${baseURL}/TechnicalEmployeeDetail`
 // http://localhost:5239/api/TechnicalEmployeeDetail/11
 export const urlPutTechnicalDriverDetails = `${baseURL}/TechnicalEmployeeDetail`
+export const urlPutPhysicalDriverDetails = `${baseURL}/PhysicalEmployeeDetail`
+export const urlGetPhysicalDriverDetails = `${baseURL}/PhysicalEmployeeDetail`
+export const urlGetPhysicalDriverDetailsByEmployee = `${baseURL}/PhysicalEmployeeDetail/employee`
+
+
+
+
 
 // http://localhost:5239/api/TechnicalEmployeeDetail/11

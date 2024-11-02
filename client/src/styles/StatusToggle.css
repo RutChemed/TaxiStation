@@ -1,24 +1,67 @@
-.status-toggle {
-    text-align: center;
-    padding: 20px;
-    background-color: #e0f7fa;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.status-toggle h2 {
-    color: #2c3e50;
-}
-
-.status-toggle button {
-    background-color: #00bcd4;
-    color: white;
+.toggle {
+    appearance: none;
+    position: relative;
+    display: inline-block;
+    box-sizing: content-box;
+    width: 6.5em;
+    height: 2em; /* עדכון הגובה */
+    padding: 0;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
     cursor: pointer;
+    border-radius: 1.5em;
+    overflow: hidden;
+    background-color: #ff8c00; /* צבע ברירת המחדל */
+    transition: background-color 0.3s ease;
+    margin-left: 2em;
 }
 
-.status-toggle button:hover {
-    background-color: #0097a7;
+.toggle:before {
+    content: "Free"; /* מלת חינם */
+    display: flex; /* שימוש ב-flex למרכז */
+    align-items: center; /* מרכז גובה */
+    justify-content: center; /* מאזן בגובה */
+    position: absolute;
+    left: 0; /* ממקם מצד שמאל */
+    width: 100%; /* תפוס את כל הרוחב */
+    height: 100%; /* עוזר למרכז את התוכן */
+    background-color: transparent; /* הופס את הרקע */
+    color: #fff;
+    transition: transform 0.3s ease; /* שינוי עדין */
+}
+
+.toggle:checked {
+    background-color: #707070; /* צבע כאשר נבחר */
+}
+
+.toggle:checked:before {
+    transform: translateX(100%); /* העברת המילה */
+}
+
+.toggle:after {
+    content: "Busy"; /* מלת העמוס */
+    display: flex; /* שימוש ב-flex */
+    align-items: center; /* מרכז גובה */
+    justify-content: center; /* מאזן */
+    position: absolute;
+    left: 0; /* ממקם מצד שמאל */
+    width: 100%; /* תפוס את כל הרוחב */
+    height: 100%; /* בגובה */
+    color: #fff; /* צבע לבן */
+    background-color: #707070; /* רקע אפור למילה Busy */
+    transform: translateX(100%); /* מתחיל מעבר 100% */
+    transition: transform 0.3s ease; /* שינוי עדין */
+}
+
+.toggle:checked:after {
+    transform: translateX(0); /* מעביר את המילה "Busy" למרכז */
+}
+
+.toggle:after, .toggle:before {
+    font-family: system-ui;
+    font-size: 1em;
+    text-transform: uppercase; /* לכתוב באותיות גדולות */
+}
+
+.toggle:focus {
+    outline: none;  /* מסיר את ה-outline הכחולה */
 }

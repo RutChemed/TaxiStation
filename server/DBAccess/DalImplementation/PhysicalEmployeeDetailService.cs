@@ -24,6 +24,12 @@
                 .FirstOrDefaultAsync(e => e.Id == id);
         }
 
+        public async Task<PhysicalEmployeeDetail?> GetAsyncByEmployee(int id)
+        {
+            return await taxiStationContext.PhysicalEmployeeDetails
+                .FirstOrDefaultAsync(e => e.Employee == id);
+        }
+
         public async Task<PhysicalEmployeeDetail> RemoveAsync(int entityId)
         {
             var result = await taxiStationContext.PhysicalEmployeeDetails
@@ -37,25 +43,57 @@
 
             return null;
         }
-
         public async Task<bool> UpdateAsync(PhysicalEmployeeDetail entity)
         {
+            // בדיקה אם המזהה של TechnicalEmployee קיים
+            var technicalEmployeeExists = await taxiStationContext.TechnicalEmployeeDetails
+                .AnyAsync(e => e.Id == entity.Employee);
+
+            if (!technicalEmployeeExists)
+            {
+                // אם המזהה לא קיים, נצא מהפונקציה וניתן חיווי על כך
+                return false;
+            }
+
+            // שליפת הנתונים של PhysicalEmployeeDetails לעדכון
             var result = await taxiStationContext.PhysicalEmployeeDetails
                 .FirstOrDefaultAsync(e => e.Id == entity.Id);
 
             if (result != null)
             {
+                // עדכון השדות ברשומה הקיימת
                 result.Employee = entity.Employee;
                 result.Available = entity.Available;
                 result.NumPlaces = entity.NumPlaces;
                 result.Latitudes = entity.Latitudes;
                 result.Longitudes = entity.Longitudes;
                 result.EmployeeNavigation = entity.EmployeeNavigation;
-                await taxiStationContext.SaveChangesAsync();
+
+                await taxiStationContext.SaveChangesAsync(); // שמירת השינויים
                 return true;
             }
 
-            return true;
+            return false; // רשומת PhysicalEmployeeDetails לא קיימת
         }
+
+        //public async Task<bool> UpdateAsync(PhysicalEmployeeDetail entity)
+        //{
+        //    var result = await taxiStationContext.PhysicalEmployeeDetails
+        //        .FirstOrDefaultAsync(e => e.Id == entity.Id);
+
+        //    if (result != null)
+        //    {
+        //        result.Employee = entity.Employee;
+        //        result.Available = entity.Available;
+        //        result.NumPlaces = entity.NumPlaces;
+        //        result.Latitudes = entity.Latitudes;
+        //        result.Longitudes = entity.Longitudes;
+        //        result.EmployeeNavigation = entity.EmployeeNavigation;
+        //        await taxiStationContext.SaveChangesAsync();
+        //        return true;
+        //    }
+
+        //    return true;
+        //}
     }
 }

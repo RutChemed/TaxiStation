@@ -51,7 +51,25 @@ namespace UI.Controllers
                     e.Message);
             }
         }
-
+        [ActionName("GetAsyncByEmployee")]
+        [HttpGet("employee/{id:int}")]
+        public async Task<ActionResult<PhysicalEmployeeDetailDTO>> GetAsyncByEmployee(int id)
+        {
+            try
+            {
+                var result = await physicalEmployeeDetailBlService.GetAsyncByEmployee(id);
+                if (result == null)
+                {
+                    return NotFound();
+                }
+                return result;
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    e.Message);
+            }
+        }
         // POST api/<PhysicalEmployeeDetailController>
         //[HttpPost]
         //public void Post([FromBody] string value)
@@ -86,9 +104,22 @@ namespace UI.Controllers
 
         // PUT api/<PhysicalEmployeeDetailController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async Task<IActionResult> Put(int id, [FromBody] PhysicalEmployeeDetailDTO value)
         {
+            //if (value == null || id != value.Id)
+            //{
+            //    return BadRequest("Invalid data.");
+            //}
+
+            var result = await physicalEmployeeDetailBlService.UpdateAsync(value);
+
+            if (result)
+            {
+                return Ok("Update successful.");
+            }
+            return NotFound("Employee not found or technical employee ID does not exist.");
         }
+
 
         [HttpDelete("{id:int}")]
         public async Task<ActionResult<PhysicalEmployeeDetailDTO>> DeleteAsync(int id)

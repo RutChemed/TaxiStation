@@ -1,28 +1,77 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/StatusToggle.css';
+import { urlPutPhysicalDriverDetails , urlGetPhysicalDriverDetailsByEmployee} from "../endpoints";
+import axios from 'axios';
 
-const StatusToggle = () => {
-    const [isAvailable, setIsAvailable] = useState(true);
+const StatusToggle = ({ userId }) => {
 
-    const toggleStatus = () => {
-        setIsAvailable(!isAvailable);
-        // הוספת לוגיקה לעדכון הסטטוס בשרת
+  const [dataSorted, setDataSorted] = useState({available: true,
+    employee
+    : 
+    3,
+    id
+    : 
+    11,
+    latitudes
+    : 
+    0,
+    longitudes
+    : 
+    0,
+    numPlaces
+    : 
+    0});
+  const [driverStatus, setDriverStatus] = useState(false);
+
+  useEffect(() => {
+    const fetchDriverStatus = async () => {
+      try {
+        const response = await axios.get(`${urlGetPhysicalDriverDetailsByEmployee}/${userId}`);
+        if(response){
+            setDataSorted(response.data);
+            console.log("dataSorted",dataSorted);
+            // setDriverStatus(response.data.available);
+            // console.error(response);
+        }
+        // setDataSorted(response.data);
+        // setDriverStatus(response.data.available);
+        // console.error(response);
+        console.log("dataSorted",dataSorted);
+
+      } 
+    //   catch (error) {
+        // console.error('שגיאה בטעינת הסטטוס:', error);
+        catch (error) {
+            console.error('שגיאה בטעינת :', error.message);
+            console.error(error.response ? error.response.data : error); // מדפיס תוספים מהתגובות אם קיימות
+        }
+      
     };
+    fetchDriverStatus();
+  }, []);
 
-    return (
-        <div className='status-toggle'>
-            <h2>Driver Status</h2>
-            {/* <button onClick={toggleStatus}>
-                {isAvailable ? 'Busy' : 'Available'}
-            </button> */}
-        <label className="relative inline-flex items-center cursor-pointer">
-      <input type="checkbox" value={true} className="sr-only peer" />
-      <div className="peer ring-0 bg-rose-400  rounded-full outline-none duration-300 after:duration-500 w-12 h-12  shadow-md peer-checked:bg-emerald-500  peer-focus:outline-none  after:content-['\u2716\uFE0F'] after:rounded-full after:absolute after:outline-none after:h-10 after:w-10 after:bg-gray-50 after:top-1 after:left-1 after:flex after:justify-center after:items-center  peer-hover:after:scale-75 peer-checked:after:content-['\u2714\uFE0F'] after:-rotate-180 peer-checked:after:rotate-0"></div>
-        </label>
-        </div>
-    );
-};
+  const handleStatusToggle = async () => {
+    const newStatus = !driverStatus;
+    setDriverStatus(newStatus);
+    setDataSorted((prevData) => ({
+        ...prevData,
+        ["Available"]: newStatus
+    }));
+    try {
+        const response = await axios.put(`${urlPutPhysicalDriverDetails}/${userId}`, dataSorted);
+      } 
+      catch (error) {
+        setDriverStatus(!newStatus);
+      }
+    }
+  ;
+  
+console.log("dataSorted----",dataSorted.available);
+  return (
+<>
+<input className="toggle" type="checkbox" checked={!dataSorted.available} onChange={handleStatusToggle}/>
+</> 
+  );
+}
 
 export default StatusToggle;
-
-

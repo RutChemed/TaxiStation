@@ -54,7 +54,8 @@ const WorkSchedule = () => {
     }, [data]);
 
     const handleSelectEvent = (event) => {
-        alert(`Event: ${event.title}\nStart: ${event.start}\nEnd: ${event.end}`);
+        // alert(`Event: ${event.title}\nStart: ${event.start}\nEnd: ${event.end}`);
+        alert("You have a travel reservation. \nSource: HaNaviim Street 3, Jerusalem, \nDestination: Destination: Ben Gurion Airport. . \nCustomer: avi@lso.com. \nNumber of places 4")
         // כאן תוכל להוסיף לוגיקה כדי להציג את פרטי האירוע במודאל אם תרצה
     };
 

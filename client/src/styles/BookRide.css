@@ -1,23 +1,114 @@
-.book-ride {
+/* עיצוב ראשי */
+.header {
     text-align: center;
     padding: 20px;
-    background-color: #e0f7fa;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.book-ride h2 {
-    color: #2c3e50;
-}
-
-.book-ride button {
-    background-color: #00bcd4;
+  }
+  
+  .order-btn {
+    background-color: #ff6600;
     color: white;
     border: none;
     padding: 10px 20px;
-    border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
-}
-.book-ride button:hover {
-    background-color: #0097a7;
-}
+    transition: background 0.3s ease;
+  }
+  
+  .order-btn:hover {
+    background-color: #cc5200;
+  }
+  
+  .hamburger-icon button {
+    color: #333;
+  }
+  
+  /* עיצוב מודל */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: #ffffff;
+    padding: 30px;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .modal-form label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+ 
+  
+  .modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .cancel-btn, .send-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 45%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cancel-btn {
+    background-color: #333;
+    color: white;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #555;
+  }
+  
+  .send-btn {
+    background-color: #ff6600;
+    color: white;
+  }
+  
+  .send-btn:hover {
+    background-color: #cc5200;
+  }
+  .input-field {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    color: black; /* תוכן האינפוט יהיה בצבע שחור */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  
+  .input-field::placeholder {
+    color: black; /* צבע ה-placeholder יהיה שחור */
+    opacity: 0.7; /* שינוי עוצמת הצבע אם תרצה */
+  }

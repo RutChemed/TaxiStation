@@ -475,23 +475,43 @@
       },
       {
         "Name": "value",
-        "Type": "System.String",
+        "Type": "Services.DTO.PhysicalEmployeeDetailDTO",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "UI.Controllers.PhysicalEmployeeDetailController",
     "Method": "DeleteAsync",
     "RelativePath": "api/PhysicalEmployeeDetail/{id}",
     "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Services.DTO.PhysicalEmployeeDetailDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UI.Controllers.PhysicalEmployeeDetailController",
+    "Method": "GetAsyncByEmployee",
+    "RelativePath": "api/PhysicalEmployeeDetail/employee/{id}",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
