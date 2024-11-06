@@ -22,3 +22,18 @@ C:\Users\user\Desktop\TaxiStation\server\DBAccess\obj\Debug\net7.0\refint\DBAcce
 C:\Users\user\Desktop\TaxiStation\server\DBAccess\obj\Debug\net7.0\DBAccess.pdb
 C:\Users\user\Desktop\TaxiStation\server\DBAccess\obj\Debug\net7.0\DBAccess.genruntimeconfig.cache
 C:\Users\user\Desktop\TaxiStation\server\DBAccess\obj\Debug\net7.0\ref\DBAccess.dll
+C:\Users\Windows 11 Home\תיקיות מחשב\Desktop\רות תכנות\פרויקט גמר עם רות חמד\TaxiStation\server\DBAccess\bin\Debug\net7.0\DBAccess.deps.json
+C:\Users\Windows 11 Home\תיקיות מחשב\Desktop\רות תכנות\פרויקט גמר עם רות חמד\TaxiStation\server\DBAccess\bin\Debug\net7.0\DBAccess.runtimeconfig.json
+C:\Users\Windows 11 Home\תיקיות מחשב\Desktop\רות תכנות\פרויקט גמר עם רות חמד\TaxiStation\server\DBAccess\bin\Debug\net7.0\DBAccess.dll
+C:\Users\Windows 11 Home\תיקיות מחשב\Desktop\רות תכנות\פרויקט גמר עם רות חמד\TaxiStation\server\DBAccess\bin\Debug\net7.0\DBAccess.pdb
+C:\Users\Windows 11 Home\תיקיות מחשב\Desktop\רות תכנות\פרויקט גמר עם רות חמד\TaxiStation\server\DBAccess\obj\Debug\net7.0\DBAccess.csproj.AssemblyReference.cache
+C:\Users\Windows 11 Home\תיקיות מחשב\Desktop\רות תכנות\פרויקט גמר עם רות חמד\TaxiStation\server\DBAccess\obj\Debug\net7.0\DBAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Windows 11 Home\תיקיות מחשב\Desktop\רות תכנות\פרויקט גמר עם רות חמד\TaxiStation\server\DBAccess\obj\Debug\net7.0\DBAccess.AssemblyInfoInputs.cache
+C:\Users\Windows 11 Home\תיקיות מחשב\Desktop\רות תכנות\פרויקט גמר עם רות חמד\TaxiStation\server\DBAccess\obj\Debug\net7.0\DBAccess.AssemblyInfo.cs
+C:\Users\Windows 11 Home\תיקיות מחשב\Desktop\רות תכנות\פרויקט גמר עם רות חמד\TaxiStation\server\DBAccess\obj\Debug\net7.0\DBAccess.csproj.CoreCompileInputs.cache
+C:\Users\Windows 11 Home\תיקיות מחשב\Desktop\רות תכנות\פרויקט גמר עם רות חמד\TaxiStation\server\DBAccess\obj\Debug\net7.0\DBAccess.sourcelink.json
+C:\Users\Windows 11 Home\תיקיות מחשב\Desktop\רות תכנות\פרויקט גמר עם רות חמד\TaxiStation\server\DBAccess\obj\Debug\net7.0\DBAccess.dll
+C:\Users\Windows 11 Home\תיקיות מחשב\Desktop\רות תכנות\פרויקט גמר עם רות חמד\TaxiStation\server\DBAccess\obj\Debug\net7.0\refint\DBAccess.dll
+C:\Users\Windows 11 Home\תיקיות מחשב\Desktop\רות תכנות\פרויקט גמר עם רות חמד\TaxiStation\server\DBAccess\obj\Debug\net7.0\DBAccess.pdb
+C:\Users\Windows 11 Home\תיקיות מחשב\Desktop\רות תכנות\פרויקט גמר עם רות חמד\TaxiStation\server\DBAccess\obj\Debug\net7.0\DBAccess.genruntimeconfig.cache
+C:\Users\Windows 11 Home\תיקיות מחשב\Desktop\רות תכנות\פרויקט גמר עם רות חמד\TaxiStation\server\DBAccess\obj\Debug\net7.0\ref\DBAccess.dll

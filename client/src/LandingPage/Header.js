@@ -3,8 +3,8 @@ import { HiOutlineMenu } from "react-icons/hi";
 function Header({ isOpen, onDrawerToggle }) {
   return (
     <header className="header">
-      <h1>Express Tax</h1>
-      <h2>Time is precious.</h2>
+      <h1>Faxi</h1>
+      <h2>fast taxi</h2>
       <button className="order-btn">Book a taxi now</button>
       
             {!isOpen && (

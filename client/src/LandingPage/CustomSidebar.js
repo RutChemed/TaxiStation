@@ -203,7 +203,6 @@ function CustomSidebar({ showContactForm, onContactFormToggle, onClose }) {
           const userRole = decoded['http://schemas.microsoft.com/ws/2008/06/identity/claims/role'];
           setRole(userRole);
           const userId = decoded['http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier'];
-          console.log('User ID:', userId);
           setUserId(decoded['http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier']);
 
         } else {
