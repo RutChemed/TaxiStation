@@ -48,7 +48,9 @@ namespace Services.ServicesImplementation
         {
                     new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
                     new Claim(ClaimTypes.Email, user.Email),
-                    new Claim(ClaimTypes.Role, user.Role)
+                    new Claim(ClaimTypes.Role, user.Role),
+                    new Claim(ClaimTypes.Role, user.Role),
+                    new Claim(ClaimTypes.Name, $"{user.FirstName} {user.LastName}")
                 // Add additional claims as needed (e.g., roles, etc.)
             };
 
