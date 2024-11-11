@@ -33,6 +33,8 @@ function LoginModal({ onClose, setRole,setShowReRegisterMessage ,setIsLoggedIn }
           setShowReRegisterMessage(false);
           setIsLoggedIn(true);
           onClose();
+          window.location.reload(true);
+
       } catch (error) {
           setErrorMessage('The username or password is incorrect'); 
           console.error('Login failed', error);
