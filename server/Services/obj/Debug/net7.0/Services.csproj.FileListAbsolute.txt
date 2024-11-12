@@ -23,3 +23,19 @@ C:\Users\user\Desktop\TaxiStation\server\Services\obj\Debug\net7.0\Services.dll
 C:\Users\user\Desktop\TaxiStation\server\Services\obj\Debug\net7.0\refint\Services.dll
 C:\Users\user\Desktop\TaxiStation\server\Services\obj\Debug\net7.0\Services.pdb
 C:\Users\user\Desktop\TaxiStation\server\Services\obj\Debug\net7.0\ref\Services.dll
+C:\Users\Windows 11 Home\תיקיות מחשב\Desktop\רות תכנות\פרויקט גמר עם רות חמד\TaxiStation\server\Services\bin\Debug\net7.0\Services.deps.json
+C:\Users\Windows 11 Home\תיקיות מחשב\Desktop\רות תכנות\פרויקט גמר עם רות חמד\TaxiStation\server\Services\bin\Debug\net7.0\Services.dll
+C:\Users\Windows 11 Home\תיקיות מחשב\Desktop\רות תכנות\פרויקט גמר עם רות חמד\TaxiStation\server\Services\bin\Debug\net7.0\Services.pdb
+C:\Users\Windows 11 Home\תיקיות מחשב\Desktop\רות תכנות\פרויקט גמר עם רות חמד\TaxiStation\server\Services\bin\Debug\net7.0\DBAccess.dll
+C:\Users\Windows 11 Home\תיקיות מחשב\Desktop\רות תכנות\פרויקט גמר עם רות חמד\TaxiStation\server\Services\bin\Debug\net7.0\DBAccess.pdb
+C:\Users\Windows 11 Home\תיקיות מחשב\Desktop\רות תכנות\פרויקט גמר עם רות חמד\TaxiStation\server\Services\obj\Debug\net7.0\Services.csproj.AssemblyReference.cache
+C:\Users\Windows 11 Home\תיקיות מחשב\Desktop\רות תכנות\פרויקט גמר עם רות חמד\TaxiStation\server\Services\obj\Debug\net7.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Windows 11 Home\תיקיות מחשב\Desktop\רות תכנות\פרויקט גמר עם רות חמד\TaxiStation\server\Services\obj\Debug\net7.0\Services.AssemblyInfoInputs.cache
+C:\Users\Windows 11 Home\תיקיות מחשב\Desktop\רות תכנות\פרויקט גמר עם רות חמד\TaxiStation\server\Services\obj\Debug\net7.0\Services.AssemblyInfo.cs
+C:\Users\Windows 11 Home\תיקיות מחשב\Desktop\רות תכנות\פרויקט גמר עם רות חמד\TaxiStation\server\Services\obj\Debug\net7.0\Services.csproj.CoreCompileInputs.cache
+C:\Users\Windows 11 Home\תיקיות מחשב\Desktop\רות תכנות\פרויקט גמר עם רות חמד\TaxiStation\server\Services\obj\Debug\net7.0\Services.sourcelink.json
+C:\Users\Windows 11 Home\תיקיות מחשב\Desktop\רות תכנות\פרויקט גמר עם רות חמד\TaxiStation\server\Services\obj\Debug\net7.0\Services.csproj.Up2Date
+C:\Users\Windows 11 Home\תיקיות מחשב\Desktop\רות תכנות\פרויקט גמר עם רות חמד\TaxiStation\server\Services\obj\Debug\net7.0\Services.dll
+C:\Users\Windows 11 Home\תיקיות מחשב\Desktop\רות תכנות\פרויקט גמר עם רות חמד\TaxiStation\server\Services\obj\Debug\net7.0\refint\Services.dll
+C:\Users\Windows 11 Home\תיקיות מחשב\Desktop\רות תכנות\פרויקט גמר עם רות חמד\TaxiStation\server\Services\obj\Debug\net7.0\Services.pdb
+C:\Users\Windows 11 Home\תיקיות מחשב\Desktop\רות תכנות\פרויקט גמר עם רות חמד\TaxiStation\server\Services\obj\Debug\net7.0\ref\Services.dll

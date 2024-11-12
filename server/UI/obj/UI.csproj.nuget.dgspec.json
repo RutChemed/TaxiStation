@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UI\\UI.csproj": {}
+    "C:\\Users\\Windows 11 Home\\תיקיות מחשב\\Desktop\\רות תכנות\\פרויקט גמר עם רות חמד\\TaxiStation\\server\\UI\\UI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DBAccess.csproj": {
+    "C:\\Users\\Windows 11 Home\\תיקיות מחשב\\Desktop\\רות תכנות\\פרויקט גמר עם רות חמד\\TaxiStation\\server\\DBAccess\\DBAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DBAccess.csproj",
+        "projectUniqueName": "C:\\Users\\Windows 11 Home\\תיקיות מחשב\\Desktop\\רות תכנות\\פרויקט גמר עם רות חמד\\TaxiStation\\server\\DBAccess\\DBAccess.csproj",
         "projectName": "DBAccess",
-        "projectPath": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DBAccess.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\obj\\",
+        "projectPath": "C:\\Users\\Windows 11 Home\\תיקיות מחשב\\Desktop\\רות תכנות\\פרויקט גמר עם רות חמד\\TaxiStation\\server\\DBAccess\\DBAccess.csproj",
+        "packagesPath": "C:\\Users\\Windows 11 Home\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Windows 11 Home\\תיקיות מחשב\\Desktop\\רות תכנות\\פרויקט גמר עם רות חמד\\TaxiStation\\server\\DBAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Windows 11 Home\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -23,8 +23,7 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://packagesource": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
@@ -78,17 +77,17 @@
         }
       }
     },
-    "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\Services.csproj": {
+    "C:\\Users\\Windows 11 Home\\תיקיות מחשב\\Desktop\\רות תכנות\\פרויקט גמר עם רות חמד\\TaxiStation\\server\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\Services.csproj",
+        "projectUniqueName": "C:\\Users\\Windows 11 Home\\תיקיות מחשב\\Desktop\\רות תכנות\\פרויקט גמר עם רות חמד\\TaxiStation\\server\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\Services.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\obj\\",
+        "projectPath": "C:\\Users\\Windows 11 Home\\תיקיות מחשב\\Desktop\\רות תכנות\\פרויקט גמר עם רות חמד\\TaxiStation\\server\\Services\\Services.csproj",
+        "packagesPath": "C:\\Users\\Windows 11 Home\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Windows 11 Home\\תיקיות מחשב\\Desktop\\רות תכנות\\פרויקט גמר עם רות חמד\\TaxiStation\\server\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Windows 11 Home\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -97,15 +96,14 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://packagesource": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DBAccess.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\DBAccess\\DBAccess.csproj"
+              "C:\\Users\\Windows 11 Home\\תיקיות מחשב\\Desktop\\רות תכנות\\פרויקט גמר עם רות חמד\\TaxiStation\\server\\DBAccess\\DBAccess.csproj": {
+                "projectPath": "C:\\Users\\Windows 11 Home\\תיקיות מחשב\\Desktop\\רות תכנות\\פרויקט גמר עם רות חמד\\TaxiStation\\server\\DBAccess\\DBAccess.csproj"
               }
             }
           }
@@ -158,17 +156,17 @@
         }
       }
     },
-    "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UI\\UI.csproj": {
+    "C:\\Users\\Windows 11 Home\\תיקיות מחשב\\Desktop\\רות תכנות\\פרויקט גמר עם רות חמד\\TaxiStation\\server\\UI\\UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UI\\UI.csproj",
+        "projectUniqueName": "C:\\Users\\Windows 11 Home\\תיקיות מחשב\\Desktop\\רות תכנות\\פרויקט גמר עם רות חמד\\TaxiStation\\server\\UI\\UI.csproj",
         "projectName": "UI",
-        "projectPath": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UI\\UI.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\UI\\obj\\",
+        "projectPath": "C:\\Users\\Windows 11 Home\\תיקיות מחשב\\Desktop\\רות תכנות\\פרויקט גמר עם רות חמד\\TaxiStation\\server\\UI\\UI.csproj",
+        "packagesPath": "C:\\Users\\Windows 11 Home\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Windows 11 Home\\תיקיות מחשב\\Desktop\\רות תכנות\\פרויקט גמר עם רות חמד\\TaxiStation\\server\\UI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Windows 11 Home\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -177,15 +175,14 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://packagesource": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\Services.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\TaxiStation\\server\\Services\\Services.csproj"
+              "C:\\Users\\Windows 11 Home\\תיקיות מחשב\\Desktop\\רות תכנות\\פרויקט גמר עם רות חמד\\TaxiStation\\server\\Services\\Services.csproj": {
+                "projectPath": "C:\\Users\\Windows 11 Home\\תיקיות מחשב\\Desktop\\רות תכנות\\פרויקט גמר עם רות חמד\\TaxiStation\\server\\Services\\Services.csproj"
               }
             }
           }

@@ -4,20 +4,18 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import {jwtDecode} from 'jwt-decode'; 
 import { urlLogin } from '../endpoints';
-import { useNavigate } from 'react-router-dom'; 
+import { useDispatch } from "react-redux";
+import { userLogin } from "../redux/actions/userLogin";
 
 function LoginModal({ onClose, setRole,setShowReRegisterMessage ,setIsLoggedIn }) { 
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState(''); 
-  const navigate = useNavigate(); 
-
+  const dispatch = useDispatch();
   const handleLogin = async (event) => {
       event.preventDefault(); 
       try {
-
-
           const response = await axios.post(urlLogin, {
               email,
               password
@@ -25,16 +23,11 @@ function LoginModal({ onClose, setRole,setShowReRegisterMessage ,setIsLoggedIn }
           const token = response.data.token;
           const decodedToken = jwtDecode(token);
           const userRole = decodedToken['http://schemas.microsoft.com/ws/2008/06/identity/claims/role'];
-         
-          localStorage.setItem('token', token);
-          localStorage.setItem('userRole', userRole); 
-
-          setRole(userRole); 
+          const userName = decodedToken["http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name"];
+          dispatch(userLogin({token: token, userRole: userRole, userName: userName})) 
           setShowReRegisterMessage(false);
           setIsLoggedIn(true);
           onClose();
-          window.location.reload(true);
-
       } catch (error) {
           setErrorMessage('The username or password is incorrect'); 
           console.error('Login failed', error);

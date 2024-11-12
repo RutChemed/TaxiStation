@@ -8,6 +8,9 @@ import './LandingStyle.css';
 import LoginModal from './LoginModal'; 
 import ProfileEditModal from '../Driver/ProfileEditModal';
 import DriverStatusToggle from '../Driver/StatusToggle';
+import { useDispatch, useSelector } from 'react-redux';
+import { userLogin } from '../redux/actions/userLogin';
+
 
 
 function CustomSidebar({ showContactForm, onContactFormToggle, onClose }) {
@@ -18,21 +21,22 @@ function CustomSidebar({ showContactForm, onContactFormToggle, onClose }) {
   const [isEditProfileModalOpen, setIsEditProfileModalOpen] = useState(false);
   const [userId, setUserId] = useState('');
   const [showStatusToggle, setShowStatusToggle] = useState(false);
-
+  const user = useSelector((state) => state.usersReducer);//get the user from the store
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    const token = localStorage.getItem('token'); // הבאת הטוקן מ-localStorage
-    if (token && typeof token === 'string') {
+    
+    if (user && user.token && typeof user.token === 'string') {
       try {
-        const decoded = jwtDecode(token);
+        const decoded = jwtDecode(user.token);
         const expirationTime = decoded.exp * 1000; 
         if(Date.now() < expirationTime) { // בדוק אם הטוקן בתוקף
           setIsLoggedIn(true); // אם הטוקן בתוקף, לעדכן את הסטייט
-          const userRole = decoded['http://schemas.microsoft.com/ws/2008/06/identity/claims/role'];
+          const userRole = user.userRole;
           setRole(userRole);
           const userId = decoded['http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier'];
           console.log('User ID:', userId);
-          setUserId(decoded['http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier']);
+          setUserId(userId);
 
         } else {
           setShowReRegisterMessage(true); 
@@ -60,8 +64,9 @@ function CustomSidebar({ showContactForm, onContactFormToggle, onClose }) {
   };
 
   const handleLogout = () => {
-    localStorage.removeItem('token'); 
+    localStorage.removeItem('token');
     setRole(null); 
+    dispatch(userLogin(null));
     setIsLoggedIn(false); // עדכון הסטייט לאחר יציאה
   };
 
@@ -177,13 +182,13 @@ function CustomSidebar({ showContactForm, onContactFormToggle, onClose }) {
               </label>
             </div>
             <div>
-              <Button type="submit" className="mail-btn" icon={RiSendPlaneFill}></Button>
+              <Button type="submit" className="mail-btn" icon={RiSendPlaneFill}>send</Button>
             </div>
           </form>
         )}
       </div>
 
-      {isLoginModalOpen && <LoginModal onClose={toggleLoginModal} setRole={setRole} setShowReRegisterMessage={setShowReRegisterMessage} setIsLoggedIn={setIsLoggedIn}/>} 
+      {isLoginModalOpen && <LoginModal onClose={toggleLoginModal} setShowReRegisterMessage={setShowReRegisterMessage} setIsLoggedIn={setIsLoggedIn}/>} 
       {isEditProfileModalOpen && <ProfileEditModal userId={userId} onClose={toggleEditProfileModal} />}
     </FlowbiteSidebar>
   );

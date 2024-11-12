@@ -10,6 +10,7 @@ import FireDriver from './Manager/FireDriver'
 import EditManager from './Manager/EditManager'
 import DriversInfo from './Manager/DriversInfo'
 import AddDriver from './Manager/AddDriver'
+import HelpChatBot from './LandingPage/HelpChatBot';
 
 const App = () => {
 
