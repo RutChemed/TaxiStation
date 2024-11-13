@@ -32,7 +32,7 @@ function CustomSidebar({ showContactForm, onContactFormToggle, onClose, setIsLog
         const expirationTime = decoded.exp * 1000; 
         if(Date.now() < expirationTime) { // בדוק אם הטוקן בתוקף
           setIsLoggedIn(true); // אם הטוקן בתוקף, לעדכן את הסטייט
-          const userRole = user.userRole;
+          const userRole = user.role;
           setRole(userRole);
           const userId = decoded['http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier'];
           console.log('User ID:', userId);
