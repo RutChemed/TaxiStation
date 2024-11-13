@@ -5,18 +5,13 @@ import Header from './Header';
 import CustomSidebar from './CustomSidebar';
 import { FaRegComments } from 'react-icons/fa'; 
 import WelcomeUser from './WelcomeUser';
-import { useDispatch, useSelector } from 'react-redux';
 import HelpChatBot from './HelpChatBot';
 
-function LandingPage() {
-  const user = useSelector((state) => state.userReducer);
-  const dispatch = useDispatch();
+function LandingPage() {  
   const [isChatBotOpen, setIsChatBotOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [showContactForm, setShowContactForm] = useState(false); 
-  const [role, setRole] = useState(null);
-
-
+  const[isLoggedIn, setIsLoggedIn] = useState(false)
   const handleClose = () => {
     setIsOpen(false); 
     setShowContactForm(false); 
@@ -30,7 +25,7 @@ function LandingPage() {
   return (
     <div className="landing-page">
       <Header isOpen={isOpen} onDrawerToggle={handleDrawerToggle} />
-      <WelcomeUser isOpen={false}/>
+      <WelcomeUser isLoggedIn = {isLoggedIn} setIsLoggedIn = {setIsLoggedIn}/>
       <section className="features">
         <ul>
           <li>Taxis available within minutes</li>
@@ -48,6 +43,8 @@ function LandingPage() {
 
       <Drawer open={isOpen} onClose={handleClose}>
         <CustomSidebar 
+          isLoggedIn={isLoggedIn}
+          setIsLoggedIn = {setIsLoggedIn}
           showContactForm={showContactForm} 
           onContactFormToggle={
             () => setShowContactForm(!showContactForm)} onClose={handleClose} />      

@@ -7,7 +7,7 @@ function HelpChatBot({onClose}) {
   const [count, setCount] = useState(0)
   const flow = {
     "start": {
-      "message": "Hello you!\nwe are so plesure you prefer ride on our taxi\nhow can I help you?"
+      "message": "Hello to you!\nwe are so glad you prefer ride on our taxis\nhow can I help you?"
     }
   }
   return (

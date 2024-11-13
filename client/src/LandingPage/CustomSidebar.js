@@ -13,11 +13,11 @@ import { userLogin } from '../redux/actions/userLogin';
 
 
 
-function CustomSidebar({ showContactForm, onContactFormToggle, onClose }) {
+function CustomSidebar({ showContactForm, onContactFormToggle, onClose, setIsLoggedIn ,isLoggedIn}) {
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
   const [role, setRole] = useState(null);
   const [showReRegisterMessage, setShowReRegisterMessage] = useState(false);
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  // const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isEditProfileModalOpen, setIsEditProfileModalOpen] = useState(false);
   const [userId, setUserId] = useState('');
   const [showStatusToggle, setShowStatusToggle] = useState(false);
@@ -64,7 +64,6 @@ function CustomSidebar({ showContactForm, onContactFormToggle, onClose }) {
   };
 
   const handleLogout = () => {
-    localStorage.removeItem('token');
     setRole(null); 
     dispatch(userLogin(null));
     setIsLoggedIn(false); // עדכון הסטייט לאחר יציאה
